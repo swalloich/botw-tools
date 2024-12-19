@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import PageWrapper from './Common/PageWrapper'
-import Home from './pages/Home'
 import Clothing from './pages/Clothing'
 import Cooking from './pages/Cooking'
+import Dashboard from './pages/Dashboard'
+import Inventory from './pages/Inventory'
 
 function App() {
   const links = [
-    { to: '/', label: 'Home' },
+    { to: '/', label: 'Dashboard' },
+    { to: 'inventory', label: 'Inventory' },
     { to: 'clothing', label: 'Clothing' },
     { to: 'cooking', label: 'Cooking' },
   ]
@@ -14,7 +16,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageWrapper links={links} />}>
-          <Route index element={<Home />} />
+          <Route index element={<Dashboard />} />
+          <Route path="inventory" element={<Inventory />} />
           <Route path="clothing" element={<Clothing />} />
           <Route path="cooking" element={<Cooking />} />
         </Route>
