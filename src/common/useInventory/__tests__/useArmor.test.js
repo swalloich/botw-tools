@@ -1,5 +1,5 @@
 import { renderHook, act, waitFor } from "@testing-library/react"
-import { useArmor } from "../useArmor"
+import useArmor from "../useArmor"
 
 const mockLocalStorage = () => {
   let store = {}

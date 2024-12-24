@@ -37,4 +37,4 @@ function useArmor() {
   }
 }
 
-export { useArmor }
+export default useArmor
