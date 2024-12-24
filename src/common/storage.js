@@ -2,9 +2,11 @@
  * Adds armor data to local storage.
  * @param {Object} armorData - The armor data to add to local storage.
  */
-function addArmorLocal(armorData) {
+function addArmorLocal(id, level) {
+  console.assert(typeof id === 'string', `Expected id to be a string, got ${typeof id}`)
+  console.assert(typeof level === 'number', `Expected level to be a number, got ${typeof level}`)
   const armor = getArmorLocal()
-  armor.push(armorData)
+  armor.push({ id, level })
   localStorage.setItem('botw-armor', JSON.stringify(armor))
 }
 
@@ -14,6 +16,7 @@ function addArmorLocal(armorData) {
  * @returns {boolean} - True if the armor was removed, false if it was not found.
  */
 function removeArmorLocal(armorId) {
+  console.assert(typeof armorId === 'string', `Expected armorId to be a string, got ${typeof armorId}`)
   const armor = getArmorLocal()
   const index = armor.findIndex((a) => a.id === armorId)
   if (index === -1) {
