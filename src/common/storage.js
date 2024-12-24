@@ -34,7 +34,10 @@ function removeArmorLocal(armorId) {
  * @returns {Object[]} armorIds
  */
 function getArmorLocal() {
-  return JSON.parse(localStorage.getItem('botw-armor')) || []
+  if (localStorage.getItem('botw-armor')) {
+    return JSON.parse(localStorage.getItem('botw-armor'))
+  }
+  return []
 }
 
 export { addArmorLocal, getArmorLocal, removeArmorLocal }
