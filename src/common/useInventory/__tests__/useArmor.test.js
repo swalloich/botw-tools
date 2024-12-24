@@ -40,4 +40,24 @@ describe("useArmor", () => {
       JSON.stringify([{ id: "old-shirt", level: 0 }])
     )
   })
+  it("Removes armor data", async () => {
+    const { result } = renderHook(() => useArmor())
+    act(() => {
+      result.current.trackArmor("old-shirt")
+    })
+    await waitFor(() => {
+      expect(result.current.armor).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({ id: "old-shirt" })
+        ])
+      )
+    })
+    act(() => {
+      result.current.untrackArmor("old-shirt")
+    })
+    await waitFor(() => {
+      expect(result.current.armor).toEqual([])
+    })
+    expect(window.localStorage.getItem("botw-armor")).toEqual("[]")
+  })
 })
