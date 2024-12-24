@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { addArmorLocal, getArmorLocal, removeArmorLocal } from '../storage'
+import { addArmorLocal, getArmorLocal, removeArmorLocal } from '../storageUtilities'
 import armorData from '../data/armor.json'
 
 function useArmor() {
