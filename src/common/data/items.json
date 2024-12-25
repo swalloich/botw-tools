@@ -1,0 +1,708 @@
+{
+  "acorn": {
+    "buy-price": 8,
+    "health-recovery": 1,
+    "name": "Acorn",
+    "sell-price": 2
+  },
+  "amber": {
+    "buy-price": 60,
+    "health-recovery": 0,
+    "name": "Amber",
+    "sell-price": 30
+  },
+  "amoranth": {
+    "buy-price": 0,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Amoranth",
+    "sell-price": 5
+  },
+  "apple": {
+    "buy-price": 12,
+    "health-recovery": 2,
+    "name": "Apple",
+    "sell-price": 3
+  },
+  "armored-carp": {
+    "buy-price": 0,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Armored Carp",
+    "sell-price": 10
+  },
+  "armored-porgy": {
+    "buy-price": 40,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 3,
+    "health-recovery": 4,
+    "name": "Armored Porgy",
+    "sell-price": 10
+  },
+  "big-hearty-raddish": {
+    "buy-price": 0,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 20,
+    "health-recovery": 16,
+    "name": "Big Hearty Raddish",
+    "sell-price": 15
+  },
+  "big-hearty-truffle": {
+    "buy-price": 60,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 16,
+    "health-recovery": 12,
+    "name": "Big Hearty Truffle",
+    "sell-price": 15
+  },
+  "bird-egg": {
+    "buy-price": 12,
+    "health-recovery": 4,
+    "name": "Bird Egg",
+    "sell-price": 3
+  },
+  "bladed-rhino-beetle": {
+    "buy-price": 0,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Bladed Rhino Beetle",
+    "sell-price": 4
+  },
+  "blue-nightshade": {
+    "buy-price": 0,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Blue Nightshade",
+    "sell-price": 4
+  },
+  "bright-eyed-crab": {
+    "buy-price": 40,
+    "cooking-effect": "stamina-restore",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Bright-Eyed Crab",
+    "sell-price": 10
+  },
+  "cane-sugar": {
+    "buy-price": 12,
+    "health-recovery": 0,
+    "name": "Cane Sugar",
+    "sell-price": 3
+  },
+  "chickaloo-tree-nut": {
+    "buy-price": 0,
+    "health-recovery": 1,
+    "name": "Chickaloo Tree Nut",
+    "sell-price": 3
+  },
+  "chillfin-trout": {
+    "buy-price": 24,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 3,
+    "health-recovery": 4,
+    "name": "Chillfin Trout",
+    "sell-price": 6
+  },
+  "chill-shroom": {
+    "buy-price": 16,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Chillshroom",
+    "sell-price": 4
+  },
+  "cold-darner": {
+    "buy-price": 10,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Cold Darner",
+    "sell-price": 4
+  },
+  "cool-safflina": {
+    "buy-price": 0,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Cool Safflina",
+    "sell-price": 3
+  },
+  "courser-bee-honey": {
+    "buy-price": 0,
+    "health-recovery": 8,
+    "name": "Courser Bee Honey",
+    "sell-price": 10
+  },
+  "diamond": {
+    "buy-price": 2000,
+    "health-recovery": 0,
+    "name": "Diamond",
+    "sell-price": 500
+  },
+  "electric-darner": {
+    "buy-price": 10,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Electric Darner",
+    "sell-price": 2
+  },
+  "electric-safflina": {
+    "buy-price": 0,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Electric Safflina",
+    "sell-price": 3
+  },
+  "energetic-rhino-beetle": {
+    "buy-price": 150,
+    "cooking-effect": "stamina-restore",
+    "effect-potentcy": 6,
+    "health-recovery": 0,
+    "name": "Energetic Rhino Beetle",
+    "sell-price": 30
+  },
+  "endura-carrot": {
+    "buy-price": 120,
+    "cooking-effect": "extra-stamina",
+    "effect-potentcy": 4,
+    "health-recovery": 8,
+    "name": "Endura Carrot",
+    "sell-price": 30
+  },
+  "endura-shroom": {
+    "buy-price": 24,
+    "cooking-effect": "extra-stamina",
+    "effect-potentcy": 1,
+    "health-recovery": 4,
+    "name": "Endura Shroom",
+    "sell-price": 6
+  },
+  "fairy": {
+    "buy-price": 0,
+    "health-recovery": 20,
+    "name": "Fairy",
+    "sell-price": 2
+  },
+  "fireproof-lizard": {
+    "buy-price": 25,
+    "cooking-effect": "flame-guard",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Fireproof Lizard",
+    "sell-price": 5
+  },
+  "fleet-lotus-seed": {
+    "buy-price": 20,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Fleet-Lotus Seed",
+    "sell-price": 5
+  },
+  "flint": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Flint",
+    "sell-price": 5
+  },
+  "fortified-pumpkin": {
+    "buy-price": 20,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Fortified Pumpkin",
+    "sell-price": 5
+  },
+  "fresh-milk": {
+    "buy-price": 12,
+    "health-recovery": 2,
+    "name": "Fresh Milk",
+    "sell-price": 3
+  },
+  "goat-butter": {
+    "buy-price": 12,
+    "health-recovery": 0,
+    "name": "Goat Butter",
+    "sell-price": 3
+  },
+  "goron-spice": {
+    "buy-price": 16,
+    "health-recovery": 0,
+    "name": "Goron Spice",
+    "sell-price": 4
+  },
+  "hearty-bass": {
+    "buy-price": 0,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 8,
+    "health-recovery": 8,
+    "name": "Hearty Bass",
+    "sell-price": 18
+  },
+  "hearty-blueshell-snail": {
+    "buy-price": 0,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 12,
+    "health-recovery": 12,
+    "name": "Hearty Blueshell Snail",
+    "sell-price": 15
+  },
+  "hearty-durian": {
+    "buy-price": 60,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 16,
+    "health-recovery": 12,
+    "name": "Hearty Durian",
+    "sell-price": 15
+  },
+  "hearty-lizard": {
+    "buy-price": 100,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 16,
+    "health-recovery": 0,
+    "name": "Hearty Lizard",
+    "sell-price": 20
+  },
+  "hearty-raddish": {
+    "buy-price": 32,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 12,
+    "health-recovery": 10,
+    "name": "Hearty Raddish",
+    "sell-price": 8
+  },
+  "hearty-salmon": {
+    "buy-price": 0,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 16,
+    "health-recovery": 16,
+    "name": "Hearty Salmon",
+    "sell-price": 10
+  },
+  "hearty-truffle": {
+    "buy-price": 24,
+    "cooking-effect": "extra-hearts",
+    "effect-potentcy": 4,
+    "health-recovery": 8,
+    "name": "Hearty Truffle",
+    "sell-price": 6
+  },
+  "hightail-lizard": {
+    "buy-price": 10,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Hightail Lizard",
+    "sell-price": 2
+  },
+  "hot-footed-frog": {
+    "buy-price": 10,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Hot-Footed Frog",
+    "sell-price": 2
+  },
+  "hydromelon": {
+    "buy-price": 16,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 2,
+    "name": "Hydromelon",
+    "sell-price": 4
+  },
+  "hylian-shroom": {
+    "buy-price": 0,
+    "health-recovery": 2,
+    "name": "Hylian Shroom",
+    "sell-price": 3
+  },
+  "hylian-rice": {
+    "buy-price": 12,
+    "health-recovery": 4,
+    "name": "Hylian Rice",
+    "sell-price": 3
+  },
+  "hyrule-bass": {
+    "buy-price": 0,
+    "health-recovery": 4,
+    "name": "Hyrule Bass",
+    "sell-price": 6
+  },
+  "hyrule-herb": {
+    "buy-price": 0,
+    "health-recovery": 4,
+    "name": "Hyrule Herb",
+    "sell-price": 3
+  },
+  "ironshell-crab": {
+    "buy-price": 32,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Ironshell Crab",
+    "sell-price": 8
+  },
+  "ironshroom": {
+    "buy-price": 20,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Ironshroom",
+    "sell-price": 5
+  },
+  "luminous-stone": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Luminous Stone",
+    "sell-price": 70
+  },
+  "mighty-bananas": {
+    "buy-price": 20,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Mighty Bananas",
+    "sell-price": 5
+  },
+  "mighty-carp": {
+    "buy-price": 0,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Mighty Carp",
+    "sell-price": 10
+  },
+  "mighty-porgy": {
+    "buy-price": 40,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 3,
+    "health-recovery": 4,
+    "name": "Mighty Porgy",
+    "sell-price": 10
+  },
+  "mighty-thistle": {
+    "buy-price": 0,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Mighty Thistle",
+    "sell-price": 5
+  },
+  "monster-extract": {
+    "buy-price": 9,
+    "health-recovery": 0,
+    "name": "Monster Extract",
+    "sell-price": 3
+  },
+  "opal": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Opal",
+    "sell-price": 60
+  },
+  "palmfruit": {
+    "buy-price": 16,
+    "health-recovery": 4,
+    "name": "Palmfruit",
+    "sell-price": 4
+  },
+  "raw-bird-drumstick": {
+    "buy-price": 32,
+    "health-recovery": 4,
+    "name": "Raw Bird Drumstick",
+    "sell-price": 8
+  },
+  "raw-bird-thigh": {
+    "buy-price": 60,
+    "health-recovery": 6,
+    "name": "Raw Bird Thigh",
+    "sell-price": 15
+  },
+  "raw-gourmet-meat": {
+    "buy-price": 140,
+    "health-recovery": 12,
+    "name": "Raw Gourmet Meat",
+    "sell-price": 35
+  },
+  "raw-meat": {
+    "buy-price": 32,
+    "health-recovery": 4,
+    "name": "Raw Meat",
+    "sell-price": 8
+  },
+  "raw-whole-bird": {
+    "buy-price": 0,
+    "health-recovery": 12,
+    "name": "Raw Whole Bird",
+    "sell-price": 35
+  },
+  "razorclaw-crab": {
+    "buy-price": 0,
+    "cooking-effect": "attack-up",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Razorclaw Crab",
+    "sell-price": 8
+  },
+  "restless-cricket": {
+    "buy-price": 10,
+    "cooking-effect": "stamina-restore",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Restless Cricket",
+    "sell-price": 2
+  },
+  "rock-salt": {
+    "buy-price": 12,
+    "health-recovery": 0,
+    "name": "Rock Salt",
+    "sell-price": 2
+  },
+  "ruby": {
+    "buy-price": 840,
+    "health-recovery": 0,
+    "name": "Ruby",
+    "sell-price": 210
+  },
+  "rugged-rhino-beetle": {
+    "buy-price": 0,
+    "cooking-effect": "defense-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Rugged Rhino Beetle",
+    "sell-price": 4
+  },
+  "rushroom": {
+    "buy-price": 12,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 1,
+    "health-recovery": 2,
+    "name": "Rushroom",
+    "sell-price": 3
+  },
+  "sanke-carp": {
+    "buy-price": 0,
+    "health-recovery": 4,
+    "name": "Sanke Carp",
+    "sell-price": 20
+  },
+  "sapphire": {
+    "buy-price": 1040,
+    "health-recovery": 0,
+    "name": "Sapphire",
+    "sell-price": 260
+  },
+  "silent-princess": {
+    "buy-price": 0,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 3,
+    "health-recovery": 0,
+    "name": "Silent Princess",
+    "sell-price": 10
+  },
+  "silent-shroom": {
+    "buy-price": 0,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 2,
+    "health-recovery": 1,
+    "name": "Silent Shroom",
+    "sell-price": 3
+  },
+  "sizzlefin-trout": {
+    "buy-price": 24,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 3,
+    "health-recovery": 4,
+    "name": "Sizzlefin Trout",
+    "sell-price": 6
+  },
+  "smotherwing-butterfly": {
+    "buy-price": 10,
+    "cooking-effect": "flame-guard",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Smotherwing Butterfly",
+    "sell-price": 2
+  },
+  "sneaky-river-snail": {
+    "buy-price": 0,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 1,
+    "health-recovery": 5,
+    "name": "Sneaky River Snail",
+    "sell-price": 6
+  },
+  "spicy-pepper": {
+    "buy-price": 0,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 2,
+    "name": "Spicy Pepper",
+    "sell-price": 3
+  },
+  "stamella-shroom": {
+    "buy-price": 20,
+    "cooking-effect": "stamina-restore",
+    "effect-potentcy": 1,
+    "health-recovery": 2,
+    "name": "Stamella Shroom",
+    "sell-price": 5
+  },
+  "staminoka-bass": {
+    "buy-price": 72,
+    "cooking-effect": "stamina-restore",
+    "effect-potentcy": 4,
+    "health-recovery": 4,
+    "name": "Staminoka Bass",
+    "sell-price": 18
+  },
+  "star-fragment": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Star Fragment",
+    "sell-price": 300
+  },
+  "stealthfin-trout": {
+    "buy-price": 0,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 2,
+    "health-recovery": 4,
+    "name": "Stealthfin Trout",
+    "sell-price": 10
+  },
+  "summerwing-butterfly": {
+    "buy-price": 10,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Summerwing Butterfly",
+    "sell-price": 2
+  },
+  "sunset-firefly": {
+    "buy-price": 10,
+    "cooking-effect": "stealth-up",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Sunset Firefly",
+    "sell-price": 2
+  },
+  "sunshroom": {
+    "buy-price": 16,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Sunshroom",
+    "sell-price": 4
+  },
+  "swift-carrot": {
+    "buy-price": 16,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 1,
+    "health-recovery": 1,
+    "name": "Swift Carrot",
+    "sell-price": 4
+  },
+  "swift-violet": {
+    "buy-price": 30,
+    "cooking-effect": "speed-up",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Swift Violet",
+    "sell-price": 10
+  },
+  "tabantha-wheat": {
+    "buy-price": 12,
+    "health-recovery": 4,
+    "name": "Tabantha Wheat",
+    "sell-price": 3
+  },
+  "thunderwing-butterfly": {
+    "buy-price": 10,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Thunderwing Butterfly",
+    "sell-price": 2
+  },
+  "tireless-frog": {
+    "buy-price": 100,
+    "cooking-effect": "extra-stamina",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Tireless Frog",
+    "sell-price": 20
+  },
+  "topaz": {
+    "buy-price": 720,
+    "health-recovery": 0,
+    "name": "Topaz",
+    "sell-price": 180
+  },
+  "voltfin-trout": {
+    "buy-price": 0,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 3,
+    "health-recovery": 4,
+    "name": "Voltfin Trout",
+    "sell-price": 6
+  },
+  "voltfruit": {
+    "buy-price": 16,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 2,
+    "name": "Voltfruit",
+    "sell-price": 4
+  },
+  "warm-darner": {
+    "buy-price": 10,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 0,
+    "name": "Warm Darner",
+    "sell-price": 2
+  },
+  "warm-safflina": {
+    "buy-price": 0,
+    "cooking-effect": "cold-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Warm Safflina",
+    "sell-price": 3
+  },
+  "wildberry": {
+    "buy-price": 0,
+    "health-recovery": 2,
+    "name": "Wildberry",
+    "sell-price": 3
+  },
+  "winterwing-butterfly": {
+    "buy-price": 10,
+    "cooking-effect": "heat-resist",
+    "effect-potentcy": 1,
+    "health-recovery": 0,
+    "name": "Winterwing Butterfly",
+    "sell-price": 2
+  },
+  "wood": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Wood",
+    "sell-price": 2
+  },
+  "zapshroom": {
+    "buy-price": 16,
+    "cooking-effect": "shock-resist",
+    "effect-potentcy": 2,
+    "health-recovery": 2,
+    "name": "Zapshroom",
+    "sell-price": 4
+  }
+}
