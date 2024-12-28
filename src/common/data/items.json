@@ -19,6 +19,30 @@
     "name": "Amoranth",
     "sell-price": 5
   },
+  "ancient-core": {
+    "buy-price": 0,
+    "health-recovery": 320,
+    "name": "Ancient Core",
+    "sell-price": 80
+  },
+  "ancient-gear": {
+    "buy-price": 120,
+    "health-recovery": 0,
+    "name": "Ancient Gear",
+    "sell-price": 30
+  },
+  "ancient-shaft": {
+    "buy-price": 160,
+    "health-recovery": 0,
+    "name": "Ancient Shaft",
+    "sell-price": 40
+  },
+  "ancient-spring": {
+    "buy-price": 60,
+    "health-recovery": 0,
+    "name": "Ancient Spring",
+    "sell-price": 15
+  },
   "apple": {
     "buy-price": 12,
     "health-recovery": 2,
@@ -79,6 +103,24 @@
     "name": "Blue Nightshade",
     "sell-price": 4
   },
+  "bokoblin-fang": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Bokoblin Fang",
+    "sell-price": 8
+  },
+  "bokoblin-guts": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Bokoblin Guts",
+    "sell-price": 20
+  },
+  "bokoblin-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Bokoblin Horn",
+    "sell-price": 3
+  },
   "bright-eyed-crab": {
     "buy-price": 40,
     "cooking-effect": "stamina-restore",
@@ -115,6 +157,12 @@
     "name": "Chillshroom",
     "sell-price": 4
   },
+  "chuchu-jelly": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Chuchu Jelly",
+    "sell-price": 5
+  },
   "cold-darner": {
     "buy-price": 10,
     "cooking-effect": "heat-resist",
@@ -143,6 +191,18 @@
     "name": "Diamond",
     "sell-price": 500
   },
+  "dinraal-claw": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Dinraal's Claw",
+    "sell-price": 180
+  },
+  "dinraal-scale": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Dinraal's Scale",
+    "sell-price": 150
+  },
   "electric-darner": {
     "buy-price": 10,
     "cooking-effect": "shock-resist",
@@ -150,6 +210,12 @@
     "health-recovery": 0,
     "name": "Electric Darner",
     "sell-price": 2
+  },
+  "electric-keese-wing": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Electric Keese Wing",
+    "sell-price": 6
   },
   "electric-safflina": {
     "buy-price": 0,
@@ -189,6 +255,18 @@
     "name": "Fairy",
     "sell-price": 2
   },
+  "farosh-claw": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Farosh's Claw",
+    "sell-price": 180
+  },
+  "farosh-scale": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Farosh's Scale",
+    "sell-price": 150
+  },
   "fireproof-lizard": {
     "buy-price": 25,
     "cooking-effect": "flame-guard",
@@ -196,6 +274,12 @@
     "health-recovery": 0,
     "name": "Fireproof Lizard",
     "sell-price": 5
+  },
+  "fire-keese-wing": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Fire Keese Wing",
+    "sell-price": 6
   },
   "fleet-lotus-seed": {
     "buy-price": 20,
@@ -224,6 +308,12 @@
     "health-recovery": 2,
     "name": "Fresh Milk",
     "sell-price": 3
+  },
+  "giant-ancient-core": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Giant Ancient Core",
+    "sell-price": 200
   },
   "goat-butter": {
     "buy-price": 12,
@@ -301,6 +391,24 @@
     "name": "Hightail Lizard",
     "sell-price": 2
   },
+  "hinox-guts": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Hinox Guts",
+    "sell-price": 80
+  },
+  "hinox-toenail": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Hinox Toenail",
+    "sell-price": 20
+  },
+  "hinox-tooth": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Hinox Tooth",
+    "sell-price": 35
+  },
   "hot-footed-frog": {
     "buy-price": 10,
     "cooking-effect": "speed-up",
@@ -341,6 +449,18 @@
     "name": "Hyrule Herb",
     "sell-price": 3
   },
+  "ice-keese-wing": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Ice Keese Wing",
+    "sell-price": 6
+  },
+  "icy-lizalfos-tail": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Icy Lizalfos Tail",
+    "sell-price": 35
+  },
   "ironshell-crab": {
     "buy-price": 32,
     "cooking-effect": "defense-up",
@@ -357,11 +477,59 @@
     "name": "Ironshroom",
     "sell-price": 5
   },
+  "keese-eyeball": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Keese Eyeball",
+    "sell-price": 20
+  },
+  "keese-wing": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Keese Wing",
+    "sell-price": 2
+  },
+  "lizalfos-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Lizalfos Horn",
+    "sell-price": 10
+  },
+  "lizalfos-tail": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Lizalfos Tail",
+    "sell-price": 28
+  },
+  "lizalfos-talon": {
+    "buy-price": 112,
+    "health-recovery": 0,
+    "name": "Lizalfos Talon",
+    "sell-price": 15
+  },
   "luminous-stone": {
     "buy-price": 0,
     "health-recovery": 0,
     "name": "Luminous Stone",
     "sell-price": 70
+  },
+  "lynel-guts": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Lynel Guts",
+    "sell-price": 200
+  },
+  "lynel-hoof": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Lynel Hoof",
+    "sell-price": 50
+  },
+  "lynel-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Lynel Horn",
+    "sell-price": 40
   },
   "mighty-bananas": {
     "buy-price": 20,
@@ -395,11 +563,71 @@
     "name": "Mighty Thistle",
     "sell-price": 5
   },
+  "moblin-fang": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Moblin Fang",
+    "sell-price": 12
+  },
+  "moblin-guts": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Moblin Guts",
+    "sell-price": 25
+  },
+  "moblin-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Moblin Horn",
+    "sell-price": 5
+  },
+  "molduga-fin": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Molduga Fin",
+    "sell-price": 30
+  },
+  "molduga-guts": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Molduga Guts",
+    "sell-price": 110
+  },
   "monster-extract": {
     "buy-price": 9,
     "health-recovery": 0,
     "name": "Monster Extract",
     "sell-price": 3
+  },
+  "nydra-claw": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Nydra's Claw",
+    "sell-price": 180
+  },
+  "nydra-scale": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Nydra's Scale",
+    "sell-price": 150
+  },
+  "octo-baloon": {
+    "buy-price": 20,
+    "health-recovery": 0,
+    "name": "Octo Baloon",
+    "sell-price": 5
+  },
+  "octorok-eyeball": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Octorok Eyeball",
+    "sell-price": 25
+  },
+  "octorok-tentacle": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Octorok Tentacle",
+    "sell-price": 10
   },
   "opal": {
     "buy-price": 0,
@@ -451,6 +679,18 @@
     "name": "Razorclaw Crab",
     "sell-price": 8
   },
+  "red-chuchu-jelly": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Red Chuchu Jelly",
+    "sell-price": 10
+  },
+  "red-lizalfos-tail": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Red Lizalfos Tail",
+    "sell-price": 35
+  },
   "restless-cricket": {
     "buy-price": 10,
     "cooking-effect": "stamina-restore",
@@ -498,6 +738,42 @@
     "health-recovery": 0,
     "name": "Sapphire",
     "sell-price": 260
+  },
+  "shard-of-dinraal-fang": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Dinraal's Fang",
+    "sell-price": 250
+  },
+  "shard-of-dinraal-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Dinraal's Horn",
+    "sell-price": 300
+  },
+  "shard-of-farosh-fang": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Farosh's Fang",
+    "sell-price": 250
+  },
+  "shard-of-farosh-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Farosh's Horn",
+    "sell-price": 300
+  },
+  "shard-of-naydra-fang": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Naydra's Fang",
+    "sell-price": 250
+  },
+  "shard-of-naydra-horn": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Shard of Naydra's Horn",
+    "sell-price": 300
   },
   "silent-princess": {
     "buy-price": 0,
@@ -677,6 +953,12 @@
     "name": "Warm Safflina",
     "sell-price": 3
   },
+  "white-chuchu-jelly": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "White Chuchu Jelly",
+    "sell-price": 10
+  },
   "wildberry": {
     "buy-price": 0,
     "health-recovery": 2,
@@ -696,6 +978,18 @@
     "health-recovery": 0,
     "name": "Wood",
     "sell-price": 2
+  },
+  "yellow-chuchu-jelly": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Yellow Chuchu Jelly",
+    "sell-price": 10
+  },
+  "yellow-lizalfos-tail": {
+    "buy-price": 0,
+    "health-recovery": 0,
+    "name": "Yellow Lizalfos Tail",
+    "sell-price": 35
   },
   "zapshroom": {
     "buy-price": 16,
