@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { addArmorLocal, getArmorLocal, removeArmorLocal } from '../storageUtilities'
+import { setArmorLocal, getArmorLocal, removeArmorLocal } from '../storageUtilities'
 import armorData from '../data/armor.json'
 
 function useArmor() {
@@ -10,7 +10,7 @@ function useArmor() {
     if (!armor) {
       return
     }
-    addArmorLocal(armorId, 0)
+    setArmorLocal(armorId, 0)
     setTrackedArmor(getArmorLocal())
   }, [])
 
@@ -25,7 +25,7 @@ function useArmor() {
       return
     }
     armor.level = level
-    addArmorLocal(id, level)
+    setArmorLocal(id, level)
     setTrackedArmor(getArmorLocal())
   }, [])
 
