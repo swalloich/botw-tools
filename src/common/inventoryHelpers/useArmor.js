@@ -6,7 +6,7 @@ function useArmor() {
   const [trackedArmor, setTrackedArmor] = useState(getArmorLocal())
 
   const trackArmor = useCallback((armorId) => {
-    const armor = armorData["data"].find((a) => a.id === armorId)
+    const armor = armorData[armorId]
     if (!armor) {
       return
     }
@@ -20,7 +20,7 @@ function useArmor() {
   }, [])
 
   const updateTrackedArmor = useCallback((id, level) => {
-    const armor = armorData.find((a) => a.id === id)
+    const armor = armorData[id]
     if (!armor) {
       return
     }
