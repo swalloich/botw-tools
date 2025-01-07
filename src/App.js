@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import PageWrapper from './Common/PageWrapper'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import PageWrapper from './common/components/PageWrapper'
 import Clothing from './pages/Clothing'
 import Cooking from './pages/Cooking'
 import Dashboard from './pages/Dashboard'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router'
 import { css } from '@emotion/react'
 
 function PageWrapper({links}) {

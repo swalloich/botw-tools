@@ -1,0 +1,4819 @@
+{
+  "amber-earrings": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Amber Earrings",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 5
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 10
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 20
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 30
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  "ancient-curiass": {
+    "baseDefense": 4,
+    "buyPrice": 2000,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Ancient Curiass",
+    "sellPrice": 125,
+    "setId": "ancient",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "ancient-screw",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ancient-gear",
+            "quantity": 10
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "ancient-core",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-shaft",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "giant-ancient-core",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ancient-greaves": {
+    "baseDefense": 4,
+    "buyPrice": 2000,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Ancient Greaves",
+    "sellPrice": 125,
+    "setId": "ancient",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "ancient-screw",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ancient-gear",
+            "quantity": 10
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "ancient-core",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-shaft",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "giant-ancient-core",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ancient-helm": {
+    "baseDefense": 4,
+    "buyPrice": 2000,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Ancient Helm",
+    "sellPrice": 125,
+    "setId": "ancient",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "ancient-screw",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ancient-gear",
+            "quantity": 10
+          },
+          {
+            "id": "ancient-spring",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "ancient-core",
+            "quantity": 5
+          },
+          {
+            "id": "ancient-shaft",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "giant-ancient-core",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "barbarian-armor": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Barbarian Armor",
+    "sellPrice": 600,
+    "setId": "barbarian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lynel-horn",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "shard-of-farosh-horn",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "barbarian-helm": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Barbarian Helm",
+    "sellPrice": 600,
+    "setId": "barbarian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lynel-horn",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "shard-of-dinraal-horn",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "barbarian-leg-wraps": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Barbarian Leg Wraps",
+    "sellPrice": 600,
+    "setId": "barbarian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lynel-horn",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "shard-of-naydra-horn",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "bokoblin-mask": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Bokoblin Mask",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "cap-of-the-hero": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Cap of the Hero",
+    "sellPrice": 125,
+    "setId": "hero",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cap-of-the-sky": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Cap of the Sky",
+    "sellPrice": 125,
+    "setId": "hero-of-the-sky",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cap-of-the-wild": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Cap of the Wild",
+    "sellPrice": 125,
+    "setId": "wild",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "acorn",
+            "quantity": 10
+          },
+          {
+            "id": "farosh-scale",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "courser-bee-honey",
+            "quantity": 5
+          },
+          {
+            "id": "farosh-claw",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "energetic-rhino-beetle",
+            "quantity": 5
+          },
+          {
+            "id": "shard-of-farosh-fang",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "shard-of-farosh-horn",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cap-of-the-wind": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Cap of the Wind",
+    "sellPrice": 125,
+    "setId": "hero-of-the-wind",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 20
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cap-of-time": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Cap of Time",
+    "sellPrice": 125,
+    "setId": "hero-of-time",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 30
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "cap-of-twilight": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Cap of Twilight",
+    "sellPrice": 125,
+    "setId": "hero-of-twilight",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "champion-tunic": {
+    "baseDefense": 5,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Champion's Tunic",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "silent-princess",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 14,
+        "materials": [
+          {
+            "id": "shard-of-farosh-horn",
+            "quantity": 2
+          },
+          {
+            "id": "silent-princess",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 22,
+        "materials": [
+          {
+            "id": "shard-of-naydra-horn",
+            "quantity": 2
+          },
+          {
+            "id": "silent-princess",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 32,
+        "materials": [
+          {
+            "id": "shard-of-dinraal-horn",
+            "quantity": 2
+          },
+          {
+            "id": "silent-princess",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "climber-bandanna": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Climber's Bandanna",
+    "sellPrice": 600,
+    "setId": "climbing",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "keese-wing",
+            "quantity": 3
+          },
+          {
+            "id": "rushroom",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "electric-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "hightail-lizard",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hot-footed-frog",
+            "quantity": 10
+          },
+          {
+            "id": "ice-keese-wing",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "swift-violet",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "climbing-boots": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Climbing Boots",
+    "sellPrice": 600,
+    "setId": "climbing",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "keese-wing",
+            "quantity": 3
+          },
+          {
+            "id": "rushroom",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "electric-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "hightail-lizard",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hot-footed-frog",
+            "quantity": 10
+          },
+          {
+            "id": "ice-keese-wing",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "swift-violet",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "climbing-gear": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Climbing Gear",
+    "sellPrice": 600,
+    "setId": "climbing",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "keese-wing",
+            "quantity": 3
+          },
+          {
+            "id": "rushroom",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "electric-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "hightail-lizard",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hot-footed-frog",
+            "quantity": 10
+          },
+          {
+            "id": "ice-keese-wing",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 5
+          },
+          {
+            "id": "swift-violet",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "dark-hood": {
+    "baseDefense": 3,
+    "buyPrice": 1999,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Dark Hood",
+    "sellPrice": 9,
+    "setId": "dark",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "dark-trousers": {
+    "baseDefense": 3,
+    "buyPrice": 999,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Dark Trousers",
+    "sellPrice": 9,
+    "setId": "dark",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "dark-tunic": {
+    "baseDefense": 3,
+    "buyPrice": 999,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Dark Tunic",
+    "sellPrice": 9,
+    "setId": "dark",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "desert-voe-headband": {
+    "baseDefense": 3,
+    "buyPrice": 450,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Desert Voe Headband",
+    "sellPrice": 115,
+    "setId": "desert-voe",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 5
+          },
+          {
+            "id": "ice-keese-wing",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ice-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "sapphire",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "desert-voe-spaulder": {
+    "baseDefense": 3,
+    "buyPrice": 1300,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Desert Voe Spaulder",
+    "sellPrice": 325,
+    "setId": "desert-voe",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "ice-keese-wing",
+            "quantity": 3
+          },
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ice-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "sapphire",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "desert-voe-trousers": {
+    "baseDefense": 3,
+    "buyPrice": 650,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Desert Voe Trousers",
+    "sellPrice": 165,
+    "setId": "desert-voe",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "ice-keese-wing",
+            "quantity": 3
+          },
+          {
+            "id": "white-chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ice-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "icy-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "sapphire",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "diamond-circlet": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Diamond Circlet",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "diamond",
+            "quantity": 2
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "diamond",
+            "quantity": 4
+          },
+          {
+            "id": "flint",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "diamond",
+            "quantity": 6
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "diamond",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "fierce-diety-armor": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Fierce Deity Armor",
+    "sellPrice": 0,
+    "setId": "fierce-deity",
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "fierce-deity-boots": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Fierce Deity Boots",
+    "sellPrice": 0,
+    "setId": "fierce-deity",
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "fierce-deity-mask": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Fierce Deity Mask",
+    "sellPrice": 0,
+    "setId": "fierce-deity",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "dinraal-scale",
+            "quantity": 1
+          },
+          {
+            "id": "hinox-toenail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "dinraal-claw",
+            "quantity": 1
+          },
+          {
+            "id": "hinox-tooth",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "shard-of-dinraal-fang",
+            "quantity": 1
+          },
+          {
+            "id": "hinox-guts",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "shard-of-dinraal-horn",
+            "quantity": 1
+          },
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  "flamebreaker-armor": {
+    "baseDefense": 3,
+    "buyPrice": 600,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Flamebreaker Armor",
+    "sellPrice": 150,
+    "setId": "flamebreaker",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 1
+          },
+          {
+            "id": "moblin-horn",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-fang",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 2
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "flamebreaker-boots": {
+    "baseDefense": 3,
+    "buyPrice": 700,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Flamebreaker Boots",
+    "sellPrice": 175,
+    "setId": "flamebreaker",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 1
+          },
+          {
+            "id": "moblin-horn",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-fang",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 2
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "flamebreaker-helm": {
+    "baseDefense": 3,
+    "buyPrice": 2000,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Flamebreaker Helm",
+    "sellPrice": 500,
+    "setId": "flamebreaker",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 1
+          },
+          {
+            "id": "moblin-horn",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "fireproof-lizard",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-fang",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 2
+          },
+          {
+            "id": "smotherwing-butterfly",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "gerudo-sirwal": {
+    "baseDefense": 1,
+    "buyPrice": 180,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Gerudo Sirwal",
+    "sellPrice": 45,
+    "setId": "gerudo",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "gerudo-top": {
+    "baseDefense": 1,
+    "buyPrice": 180,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Gerudo Top",
+    "sellPrice": 45,
+    "setId": "gerudo",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "gerudo-veil": {
+    "baseDefense": 1,
+    "buyPrice": 180,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Gerudo Veil",
+    "sellPrice": 45,
+    "setId": "gerudo",
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "hylian-hood": {
+    "baseDefense": 3,
+    "buyPrice": 60,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Hylian Hood",
+    "sellPrice": 15,
+    "setId": "hylian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-horn",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 5
+          },
+          {
+            "id": "bokoblin-horn",
+            "quantity": 8
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 10
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "hylian-trousers": {
+    "baseDefense": 3,
+    "buyPrice": 90,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Hylian Trousers",
+    "sellPrice": 25,
+    "setId": "hylian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-horn",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 5
+          },
+          {
+            "id": "bokoblin-horn",
+            "quantity": 8
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 10
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "hylian-tunic": {
+    "baseDefense": 3,
+    "buyPrice": 120,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Hylian Tunic",
+    "sellPrice": 30,
+    "setId": "hylian",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-horn",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 5
+          },
+          {
+            "id": "bokoblin-horn",
+            "quantity": 8
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "bokoblin-fang",
+            "quantity": 10
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "bokoblin-guts",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "island-lobster-shirt": {
+    "baseDefense": 1,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Island Lobster Shirt",
+    "sellPrice": 0,
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "korok-mask": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Korok Mask",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "lizalfos-mask": {
+    "baseDefense": 3,
+    "buyPrice": 200,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Lizalfos Mask",
+    "sellPrice": 29,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "lynel-mask": {
+    "baseDefense": 3,
+    "buyPrice": 999,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Lynel Mask",
+    "sellPrice": 39,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "majora-mask": {
+    "baseDefense": 1,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Majora's Mask",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "midna-helmet": {
+    "baseDefense": 7,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "headgear"
+    ],
+    "name": "Midna's Helmet",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "moblin-mask": {
+    "baseDefense": 3,
+    "buyPrice": 199,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Moblin Mask",
+    "sellPrice": 19,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "nintendo-switch-shirt": {
+    "baseDefense": 1,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Nintendo Switch Shirt",
+    "sellPrice": 0,
+    "sourceContent": "expansion-pass",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "old-shirt": {
+    "baseDefense": 1,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Old Shirt",
+    "sellPrice": 15,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "opal-earrings": {
+    "baseDefense": 3,
+    "buyPrice": 200,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Opal Earrings",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "opal",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "opal",
+            "quantity": 8
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "opal",
+            "quantity": 16
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "opal",
+            "quantity": 20
+          }
+        ]
+      }
+    ]
+  },
+  "phantom-armor": {
+    "baseDefense": 8,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Phantom Armor",
+    "sellPrice": 0,
+    "setId": "phantom",
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "phantom-ganon-armor": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Phantom Ganon Armor",
+    "sellPrice": 0,
+    "setId": "phantom-ganon",
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "phantom-ganon-greaves": {
+    "baseDefense": 4,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Phantom Ganon Greaves",
+    "sellPrice": 0,
+    "setId": "phantom-ganon",
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "phantom-ganon-skull": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Phantom Ganon Skull",
+    "sellPrice": 0,
+    "setId": "phantom-ganon",
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "phantom-greaves": {
+    "baseDefense": 8,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Phantom Greaves",
+    "sellPrice": 0,
+    "setId": "phantom",
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "phantom-helmet": {
+    "baseDefense": 8,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Phantom Helmet",
+    "sellPrice": 0,
+    "setId": "phantom",
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "radiant-mask": {
+    "baseDefense": 3,
+    "buyPrice": 800,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Radiant Mask",
+    "sellPrice": 200,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "luminous-stone",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 8
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 10
+          },
+          {
+            "id": "molduga-guts",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 20
+          },
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "radiant-shirt": {
+    "baseDefense": 3,
+    "buyPrice": 800,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Radiant Shirt",
+    "sellPrice": 200,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "luminous-stone",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 8
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 10
+          },
+          {
+            "id": "molduga-guts",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 20
+          },
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "radiant-tights": {
+    "baseDefense": 3,
+    "buyPrice": 800,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Radiant Tights",
+    "sellPrice": 200,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "luminous-stone",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 8
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 10
+          },
+          {
+            "id": "molduga-guts",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "luminous-stone",
+            "quantity": 20
+          },
+          {
+            "id": "lynel-guts",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "ravio-hood": {
+    "baseDefense": 2,
+    "buyPrice": 50,
+    "categories": [
+      "headgear",
+      "mask"
+    ],
+    "name": "Ravio's Hood",
+    "sellPrice": 0,
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "royal-guard-boots": {
+    "baseDefense": 4,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Royal Guard Boots",
+    "sellPrice": 0,
+    "sourceContent": "champions-ballad",
+    "setId": "royal-guard",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "royal-guard-cap": {
+    "baseDefense": 4,
+    "buyPrice": 50,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Royal Guard Cap",
+    "sellPrice": 0,
+    "setId": "royal-guard",
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "royal-guard-uniform": {
+    "baseDefense": 4,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Royal Guard Uniform",
+    "sellPrice": 0,
+    "setId": "royal-guard",
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "rubber-armor": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Rubber Armor",
+    "sellPrice": 600,
+    "setId": "rubber",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "voltfruit",
+            "quantity": 5
+          },
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 5
+          },
+          {
+            "id": "zapshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 10
+          },
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "rubber-helm": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Rubber Helm",
+    "sellPrice": 600,
+    "setId": "rubber",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "voltfruit",
+            "quantity": 5
+          },
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 5
+          },
+          {
+            "id": "zapshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 10
+          },
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "rubber-tights": {
+    "baseDefense": 3,
+    "buyPrice": 4000,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Rubber Tights",
+    "sellPrice": 600,
+    "setId": "rubber",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "voltfruit",
+            "quantity": 5
+          },
+          {
+            "id": "yellow-chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 5
+          },
+          {
+            "id": "zapshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "topaz",
+            "quantity": 10
+          },
+          {
+            "id": "yellow-lizalfos-tail",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "ruby-circlet": {
+    "baseDefense": 3,
+    "buyPrice": 500,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Ruby Circlet",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "ruby",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "ruby",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 6
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "salvager-headwear": {
+    "baseDefense": 5,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Salvager Headwear",
+    "sellPrice": 0,
+    "setId": "salvager",
+    "sourceContent": "xenoblade",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "salvager-trousers": {
+    "baseDefense": 5,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Salvager Trousers",
+    "sellPrice": 0,
+    "setId": "salvager",
+    "sourceContent": "xenoblade",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "salvager-vest": {
+    "baseDefense": 5,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Salvager Vest",
+    "sellPrice": 0,
+    "setId": "salvager",
+    "sourceContent": "xenoblade",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "sand-boots": {
+    "baseDefense": 3,
+    "buyPrice": 800,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Sand Boots",
+    "sellPrice": 200,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "hightail-lizard",
+            "quantity": 10
+          },
+          {
+            "id": "molduga-fin",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "molduga-fin",
+            "quantity": 10
+          },
+          {
+            "id": "swift-carrot",
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "molduga-guts",
+            "quantity": 2
+          },
+          {
+            "id": "rushroom",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "molduga-guts",
+            "quantity": 4
+          },
+          {
+            "id": "swift-violet",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "snow-boots": {
+    "baseDefense": 3,
+    "buyPrice": 800,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Snow Boots",
+    "sellPrice": 200,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "hightail-lizard",
+            "quantity": 10
+          },
+          {
+            "id": "octorok-tentacle",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "octo-balloon",
+            "quantity": 5
+          },
+          {
+            "id": "swift-carrot",
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "octorok-eyeball",
+            "quantity": 5
+          },
+          {
+            "id": "rushroom",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "naydra-scale",
+            "quantity": 2
+          },
+          {
+            "id": "swift-violet",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "sapphire-circlet": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Sapphire Circlet",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "sapphire",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "sapphire",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 6
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "sheik-mask": {
+    "baseDefense": 2,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Sheik's Mask",
+    "sellPrice": 0,
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 4,
+        "materials": [
+          {
+            "id": "slient-princess",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 6,
+        "materials": [
+          {
+            "id": "slient-princess",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 9,
+        "materials": [
+          {
+            "id": "slient-princess",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 16,
+        "materials": [
+          {
+            "id": "slient-princess",
+            "quantity": 4
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 4
+          }
+        ]
+      }
+    ]
+  },
+  "snowquill-headdress": {
+    "baseDefense": 3,
+    "buyPrice": 1000,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Snowquill Headdress",
+    "sellPrice": 250,
+    "setId": "snowquill",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 5
+          },
+          {
+            "id": "warm-safflina",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "sunshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "red-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "ruby",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "snowquill-trousers": {
+    "baseDefense": 3,
+    "buyPrice": 550,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Snowquill Trousers",
+    "sellPrice": 140,
+    "setId": "snowquill",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 5
+          },
+          {
+            "id": "warm-safflina",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "sunshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "red-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "ruby",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "snowquill-tunic": {
+    "baseDefense": 3,
+    "buyPrice": 600,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Snowquill Tunic",
+    "sellPrice": 150,
+    "setId": "snowquill",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "red-chuchu-jelly",
+            "quantity": 5
+          },
+          {
+            "id": "warm-safflina",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "fire-keese-wing",
+            "quantity": 8
+          },
+          {
+            "id": "sunshroom",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "red-lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "ruby",
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  "soldier-armor": {
+    "baseDefense": 4,
+    "buyPrice": 250,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Soldier's Armor",
+    "sellPrice": 65,
+    "setId": "soldier",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "keese-eyeball",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 1
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  "soldier-greaves": {
+    "baseDefense": 4,
+    "buyPrice": 200,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Soldier's Greaves",
+    "sellPrice": 50,
+    "setId": "soldier",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "keese-eyeball",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 1
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  "soldier-helm": {
+    "baseDefense": 4,
+    "buyPrice": 180,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Soldier's Helm",
+    "sellPrice": 45,
+    "setId": "soldier",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "bokoblin-guts",
+            "quantity": 3
+          },
+          {
+            "id": "chuchu-jelly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "keese-eyeball",
+            "quantity": 3
+          },
+          {
+            "id": "moblin-guts",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "hinox-guts",
+            "quantity": 2
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "lynel-guts",
+            "quantity": 2
+          },
+          {
+            "id": "lynel-hoof",
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  "stealth-chest-guard": {
+    "baseDefense": 2,
+    "buyPrice": 700,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Stealth Chest Guard",
+    "sellPrice": 175,
+    "setId": "stealth",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 4,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 6,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 5
+          },
+          {
+            "id": "sunset-firefly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 9,
+        "materials": [
+          {
+            "id": "silent-shroom",
+            "quantity": 8
+          },
+          {
+            "id": "sneaky-river-snail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 16,
+        "materials": [
+          {
+            "id": "silent-princess",
+            "quantity": 5
+          },
+          {
+            "id": "stealthfin-trout",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "stealth-mask": {
+    "baseDefense": 2,
+    "buyPrice": 500,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Stealth Mask",
+    "sellPrice": 125,
+    "setId": "stealth",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 6,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 5
+          },
+          {
+            "id": "sunset-firefly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 9,
+        "materials": [
+          {
+            "id": "silent-shroom",
+            "quantity": 8
+          },
+          {
+            "id": "sneaky-river-snail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 16,
+        "materials": [
+          {
+            "id": "silent-princess",
+            "quantity": 5
+          },
+          {
+            "id": "stealthfin-trout",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "stealth-tights": {
+    "baseDefense": 2,
+    "buyPrice": 600,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Stealth Tights",
+    "sellPrice": 150,
+    "setId": "stealth",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 4,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 6,
+        "materials": [
+          {
+            "id": "blue-nightshade",
+            "quantity": 5
+          },
+          {
+            "id": "sunset-firefly",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 9,
+        "materials": [
+          {
+            "id": "silent-shroom",
+            "quantity": 8
+          },
+          {
+            "id": "sneaky-river-snail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 16,
+        "materials": [
+          {
+            "id": "silent-princess",
+            "quantity": 5
+          },
+          {
+            "id": "stealthfin-trout",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "thunderhelm": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Thunder Helm",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "tingle-hood": {
+    "baseDefense": 2,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Tingle's Hood",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "tingle-shirt": {
+    "baseDefense": 2,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tingle's Shirt",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "tingle-tights": {
+    "baseDefense": 2,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Tingle's Tights",
+    "sellPrice": 0,
+    "sourceContent": "master-trials",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "topaz-earrings": {
+    "baseDefense": 3,
+    "buyPrice": 500,
+    "categories": [
+      "headgear",
+      "jewelry"
+    ],
+    "name": "Topaz Earrings",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "topaz",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "flint",
+            "quantity": 3
+          },
+          {
+            "id": "topaz",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-the-hero": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Trousers of the Hero",
+    "sellPrice": 125,
+    "setId": "hero",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-the-sky": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Trousers of the Sky",
+    "sellPrice": 125,
+    "setId": "hero-of-the-sky",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-the-wild": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Trousers of the Wild",
+    "sellPrice": 0,
+    "setId": "wild",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "acorn",
+            "quantity": 10
+          },
+          {
+            "id": "dinraal-scale",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "courser-bee-honey",
+            "quantity": 5
+          },
+          {
+            "id": "dinraal-claw",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "energetic-rhino-beetle",
+            "quantity": 5
+          },
+          {
+            "id": "shard-of-dinraal-fang",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "shard-of-dinraal-horn",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-the-wind": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Trousers of the Wind",
+    "sellPrice": 125,
+    "setId": "hero-of-the-wind",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-time": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "trousers"
+    ],
+    "name": "Trousers of Time",
+    "sellPrice": 125,
+    "setId": "hero-of-time",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 30
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "trousers-of-twilight": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "trousers"
+    ],
+    "name": "Trousers of Twilight",
+    "sellPrice": 125,
+    "setId": "hero-of-twilight",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-the-hero": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of the Hero",
+    "sellPrice": 125,
+    "setId": "hero",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "ruby",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-the-sky": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of the Sky",
+    "sellPrice": 125,
+    "setId": "hero-of-the-sky",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 1
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "sapphire",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-the-wild": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of the Wild",
+    "sellPrice": 0,
+    "setId": "wild",
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 7,
+        "materials": [
+          {
+            "id": "acorn",
+            "quantity": 10
+          },
+          {
+            "id": "naydra-scale",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "courser-bee-honey",
+            "quantity": 5
+          },
+          {
+            "id": "naydra-claw",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 18,
+        "materials": [
+          {
+            "id": "energetic-rhino-beetle",
+            "quantity": 5
+          },
+          {
+            "id": "shard-of-naydra-fang",
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "defense": 28,
+        "materials": [
+          {
+            "id": "shard-of-naydra-horn",
+            "quantity": 2
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-the-wind": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of the Wind",
+    "sellPrice": 125,
+    "setId": "hero-of-the-wind",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 3
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 10
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "opal",
+            "quantity": 20
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-time": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of Time",
+    "sellPrice": 125,
+    "setId": "hero-of-time",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 5
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 15
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "amber",
+            "quantity": 30
+          },
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  "tunic-of-twilight": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Tunic of Twilight",
+    "sellPrice": 125,
+    "setId": "hero-of-twilight",
+    "sourceContent": "amiibo",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "star-fragment",
+            "quantity": 1
+          },
+          {
+            "id": "topaz",
+            "quantity": 10
+          }
+        ]
+      }
+    ]
+  },
+  "vah-medoh-divine-helm": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Vah Medoh Divine Helm",
+    "sellPrice": 0,
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "vah-naboris-divine-helm": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Vah Naboris Divine Helm",
+    "sellPrice": 0,
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "vah-rudania-divine-helm": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Vah Rudania Divine Helm",
+    "sellPrice": 0,
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "vah-ruta-divine-helm": {
+    "baseDefense": 4,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Vah Ruta Divine Helm",
+    "sellPrice": 0,
+    "sourceContent": "amiibo",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "warm-doublet": {
+    "baseDefense": 1,
+    "buyPrice": 80,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Warm Doublet",
+    "sellPrice": 20,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "well-worn-trousers": {
+    "baseDefense": 1,
+    "buyPrice": 50,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Well-Worn Trousers",
+    "sellPrice": 15,
+    "sourceContent": "base-game",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "zant-helmet": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Zant's Helmet",
+    "sellPrice": 0,
+    "sourceContent": "champions-ballad",
+    "upgradeable": false,
+    "upgrades": []
+  },
+  "zora-armor": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "tunic"
+    ],
+    "name": "Zora Armor",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lizalfos-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "hyrule-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-talon",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hearty-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "opal",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "zora-greaves": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "armor",
+      "greaves"
+    ],
+    "name": "Zora Greaves",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lizalfos-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "hyrule-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-talon",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hearty-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "opal",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  },
+  "zora-helm": {
+    "baseDefense": 3,
+    "buyPrice": 0,
+    "categories": [
+      "headgear",
+      "armor"
+    ],
+    "name": "Zora Helm",
+    "sellPrice": 0,
+    "sourceContent": "base-game",
+    "upgradeable": true,
+    "upgrades": [
+      {
+        "defense": 5,
+        "materials": [
+          {
+            "id": "lizalfos-horn",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "defense": 8,
+        "materials": [
+          {
+            "id": "hyrule-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-talon",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 12,
+        "materials": [
+          {
+            "id": "hearty-bass",
+            "quantity": 5
+          },
+          {
+            "id": "lizalfos-tail",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "defense": 20,
+        "materials": [
+          {
+            "id": "lizalfos-tail",
+            "quantity": 10
+          },
+          {
+            "id": "opal",
+            "quantity": 15
+          }
+        ]
+      }
+    ]
+  }
+}
