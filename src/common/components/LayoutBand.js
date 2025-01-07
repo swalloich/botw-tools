@@ -9,6 +9,7 @@ function LayoutBand({children, direction = 'column'}) {
     flex-direction: ${direction};
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   `
 
   return (

@@ -15,10 +15,14 @@ const wrapperCSS = css`
   }
 `
 
+const headerCss= css`
+  padding: 5px 0;
+`
+
 function PageWrapper({links}) {
   return (
     <div css={wrapperCSS}>
-      <header>
+      <header css={headerCss}>
         <LayoutBand direction="row">
           <img src="https://placehold.co/150x75" alt="" width={150} height={75} />
           <NavBar links={links} />
