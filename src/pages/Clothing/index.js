@@ -1,11 +1,11 @@
 import React from 'react'
+import LayoutBand from '../../common/components/LayoutBand'
 
 function Clothing(props) {
-  const { ...rest } = props
   return (
-    <div {...rest}>
+    <LayoutBand>
       <h1>Clothing</h1>
-    </div>
+    </LayoutBand>
   )
 }
 

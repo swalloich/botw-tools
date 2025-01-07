@@ -1,12 +1,11 @@
 import React from 'react'
+import LayoutBand from '../../common/components/LayoutBand'
 
 function Inventory(props) {
-  const { ...rest } = props
-
   return (
-    <div {...rest}>
+    <LayoutBand>
       <h1>Inventory</h1>
-    </div>
+    </LayoutBand>
   )
 }
 
