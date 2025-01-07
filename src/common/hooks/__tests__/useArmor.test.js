@@ -25,12 +25,12 @@ describe("useArmor", () => {
   })
   it("Stores armor data", async () => {
     const { result } = renderHook(() => useArmor())
-    expect(result.current.armor).toEqual({})
+    expect(result.current.trackedArmor).toEqual({})
     act(() => {
       result.current.trackArmor("old-shirt")
     })
     await waitFor(() => {
-      expect(result.current.armor).toHaveProperty('old-shirt')
+      expect(result.current.trackedArmor).toHaveProperty('old-shirt')
     })
     expect(window.localStorage.getItem("botw-armor")).toEqual(
       JSON.stringify({ "old-shirt": 0 })
@@ -42,13 +42,13 @@ describe("useArmor", () => {
       result.current.trackArmor("old-shirt")
     })
     await waitFor(() => {
-      expect(result.current.armor).toHaveProperty('old-shirt', 0)
+      expect(result.current.trackedArmor).toHaveProperty('old-shirt', 0)
     })
     act(() => {
       result.current.untrackArmor("old-shirt")
     })
     await waitFor(() => {
-      expect(result.current.armor).toEqual({})
+      expect(result.current.trackedArmor).toEqual({})
     })
     expect(window.localStorage.getItem("botw-armor")).toEqual("{}")
   })

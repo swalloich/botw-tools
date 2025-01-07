@@ -30,7 +30,8 @@ function useArmor() {
   }, [])
 
   return {
-    armor: trackedArmor,
+    trackedArmor: trackedArmor,
+    allArmor: armorData,
     trackArmor,
     untrackArmor,
     updateTrackedArmor,
