@@ -3,5 +3,5 @@ import App from './App'
 
 test('renders learn react link', () => {
   render(<App />)
-  expect(screen.getByText(/Home/i)).toBeInTheDocument()
+  expect(screen.getByRole("heading")).toHaveTextContent("Dashboard")
 });

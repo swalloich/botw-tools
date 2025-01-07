@@ -6,7 +6,7 @@ function setArmorLocal(id, level) {
   console.assert(typeof id === 'string', `Expected id to be a string, got ${typeof id}`)
   console.assert(typeof level === 'number', `Expected level to be a number, got ${typeof level}`)
   const armor = getArmorLocal()
-  armor.push({ id, level })
+  armor[id] = level
   localStorage.setItem('botw-armor', JSON.stringify(armor))
 }
 
@@ -31,11 +31,10 @@ function setItemLocal(itemId, qty = 1) {
 function removeArmorLocal(armorId) {
   console.assert(typeof armorId === 'string', `Expected armorId to be a string, got ${typeof armorId}`)
   const armor = getArmorLocal()
-  const index = armor.findIndex((a) => a.id === armorId)
-  if (index === -1) {
+  if (armor[armorId] === undefined) {
     return false
   }
-  armor.splice(index, 1)
+  delete armor[armorId]
   localStorage.setItem('botw-armor', JSON.stringify(armor))
   return true
 }
@@ -62,10 +61,11 @@ function removeItemLocal(itemId) {
  * @returns {Object[]} armorIds
  */
 function getArmorLocal() {
-  if (localStorage.getItem('botw-armor')) {
-    return JSON.parse(localStorage.getItem('botw-armor'))
+  const localArmor = localStorage.getItem('botw-armor')
+  if (localArmor) {
+    return JSON.parse(localArmor)
   }
-  return []
+  return {}
 }
 
 /**
