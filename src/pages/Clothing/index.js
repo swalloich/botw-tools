@@ -13,7 +13,8 @@ const gridCss = css`
 
 function Clothing(props) {
   const { allArmor, trackedArmor, trackArmor, untrackArmor } = useArmor()
-  const untrackedArmor = Object.keys(allArmor).filter((armorId) => trackedArmor?.[armorId] === undefined)
+  const untrackedArmorKeys = Object.keys(allArmor).filter((armorId) => trackedArmor?.[armorId] === undefined)
+  const trackedArmorKeys = Object.keys(allArmor).filter((armorId) => trackedArmor?.[armorId] !== undefined)
 
   const setTracking = useCallback((armorId, isTracked) => {
     if (isTracked) {
@@ -26,24 +27,30 @@ function Clothing(props) {
   return (
     <LayoutBand>
       <h1>Clothing</h1>
-      {Object.keys(trackedArmor).length > 0 && (
+      {trackedArmorKeys.length > 0 && (
         <>
           <h2>In inventory</h2>
           <div css={gridCss}>
-            {Object.keys(allArmor).filter((armorId) => trackedArmor?.[armorId] !== undefined).map((armorId) => {
-              const inInventory = trackedArmor?.[armorId] !== undefined
-              return <ClothingCard key={armorId} id={armorId} inInventory={inInventory} setTracking={setTracking} />
+            {trackedArmorKeys.map((key) => {
+              const data = {
+                id: key,
+                ...allArmor[key],
+              }
+              return <ClothingCard key={key} headingLevel={3} data={data} inInventory={true} setTracking={setTracking} />
             })}
           </div>
         </>
       )}
-      {untrackedArmor.length > 0 && (
+      {untrackedArmorKeys.length > 0 && (
         <>
           <h2>Not in inventory</h2>
           <div css={gridCss}>
-            {untrackedArmor.map((armorId) => {
-              const inInventory = trackedArmor?.[armorId] !== undefined
-              return <ClothingCard key={armorId} id={armorId} inInventory={inInventory} setTracking={setTracking} />
+            {untrackedArmorKeys.map((key) => {
+              const data = {
+                id: key,
+                ...allArmor[key],
+              }
+              return <ClothingCard key={key} headingLevel={3} data={data} setTracking={setTracking} />
             })}
           </div>
         </>
