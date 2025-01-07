@@ -7,7 +7,7 @@ function LayoutBand({children, direction = 'column'}) {
   const wrapperCSS = css`
     display: flex;
     flex-direction: ${direction};
-    max-width: 1100px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 15px;
   `

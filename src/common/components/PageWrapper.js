@@ -12,6 +12,8 @@ const wrapperCSS = css`
 const headerCss= css`
   display: flex;
   padding: 8px 24px;
+  background-color: white;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
 `
 
 function PageWrapper({links}) {
