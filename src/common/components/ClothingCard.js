@@ -7,7 +7,7 @@ function ClothingCard({headingLevel = 2, data, inInventory = false, setTracking}
   return (
     <Card>
       <img src="https://placehold.co/250" alt="" />
-      <Heading>{data.name}</Heading>
+      <Heading>{data.displayName}</Heading>
       <button onClick={() => setTracking(data.id, !inInventory)}>{inInventory ? 'Untrack' : 'Track'}</button>
     </Card>
   )

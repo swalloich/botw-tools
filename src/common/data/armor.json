@@ -6,7 +6,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Amber Earrings",
+    "displayName": "Amber Earrings",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -72,7 +72,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Ancient Curiass",
+    "displayName": "Ancient Curiass",
     "sellPrice": 125,
     "setId": "ancient",
     "sourceContent": "base-game",
@@ -139,7 +139,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Ancient Greaves",
+    "displayName": "Ancient Greaves",
     "sellPrice": 125,
     "setId": "ancient",
     "sourceContent": "base-game",
@@ -206,7 +206,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Ancient Helm",
+    "displayName": "Ancient Helm",
     "sellPrice": 125,
     "setId": "ancient",
     "sourceContent": "base-game",
@@ -273,7 +273,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Barbarian Armor",
+    "displayName": "Barbarian Armor",
     "sellPrice": 600,
     "setId": "barbarian",
     "sourceContent": "base-game",
@@ -336,7 +336,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Barbarian Helm",
+    "displayName": "Barbarian Helm",
     "sellPrice": 600,
     "setId": "barbarian",
     "sourceContent": "base-game",
@@ -399,7 +399,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Barbarian Leg Wraps",
+    "displayName": "Barbarian Leg Wraps",
     "sellPrice": 600,
     "setId": "barbarian",
     "sourceContent": "base-game",
@@ -462,7 +462,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Bokoblin Mask",
+    "displayName": "Bokoblin Mask",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -475,7 +475,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Cap of the Hero",
+    "displayName": "Cap of the Hero",
     "sellPrice": 125,
     "setId": "hero",
     "sourceContent": "amiibo",
@@ -542,7 +542,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Cap of the Sky",
+    "displayName": "Cap of the Sky",
     "sellPrice": 125,
     "setId": "hero-of-the-sky",
     "sourceContent": "amiibo",
@@ -609,7 +609,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Cap of the Wild",
+    "displayName": "Cap of the Wild",
     "sellPrice": 125,
     "setId": "wild",
     "sourceContent": "base-game",
@@ -676,7 +676,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Cap of the Wind",
+    "displayName": "Cap of the Wind",
     "sellPrice": 125,
     "setId": "hero-of-the-wind",
     "sourceContent": "amiibo",
@@ -743,7 +743,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Cap of Time",
+    "displayName": "Cap of Time",
     "sellPrice": 125,
     "setId": "hero-of-time",
     "sourceContent": "amiibo",
@@ -810,7 +810,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Cap of Twilight",
+    "displayName": "Cap of Twilight",
     "sellPrice": 125,
     "setId": "hero-of-twilight",
     "sourceContent": "amiibo",
@@ -877,7 +877,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Champion's Tunic",
+    "displayName": "Champion's Tunic",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -939,7 +939,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Climber's Bandanna",
+    "displayName": "Climber's Bandanna",
     "sellPrice": 600,
     "setId": "climbing",
     "sourceContent": "base-game",
@@ -1006,7 +1006,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Climbing Boots",
+    "displayName": "Climbing Boots",
     "sellPrice": 600,
     "setId": "climbing",
     "sourceContent": "base-game",
@@ -1073,7 +1073,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Climbing Gear",
+    "displayName": "Climbing Gear",
     "sellPrice": 600,
     "setId": "climbing",
     "sourceContent": "base-game",
@@ -1140,7 +1140,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Dark Hood",
+    "displayName": "Dark Hood",
     "sellPrice": 9,
     "setId": "dark",
     "sourceContent": "base-game",
@@ -1154,7 +1154,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Dark Trousers",
+    "displayName": "Dark Trousers",
     "sellPrice": 9,
     "setId": "dark",
     "sourceContent": "base-game",
@@ -1168,7 +1168,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Dark Tunic",
+    "displayName": "Dark Tunic",
     "sellPrice": 9,
     "setId": "dark",
     "sourceContent": "base-game",
@@ -1182,7 +1182,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Desert Voe Headband",
+    "displayName": "Desert Voe Headband",
     "sellPrice": 115,
     "setId": "desert-voe",
     "sourceContent": "base-game",
@@ -1245,7 +1245,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Desert Voe Spaulder",
+    "displayName": "Desert Voe Spaulder",
     "sellPrice": 325,
     "setId": "desert-voe",
     "sourceContent": "base-game",
@@ -1308,7 +1308,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Desert Voe Trousers",
+    "displayName": "Desert Voe Trousers",
     "sellPrice": 165,
     "setId": "desert-voe",
     "sourceContent": "base-game",
@@ -1371,7 +1371,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Diamond Circlet",
+    "displayName": "Diamond Circlet",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -1437,7 +1437,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Fierce Deity Armor",
+    "displayName": "Fierce Deity Armor",
     "sellPrice": 0,
     "setId": "fierce-deity",
     "sourceContent": "amiibo",
@@ -1451,7 +1451,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Fierce Deity Boots",
+    "displayName": "Fierce Deity Boots",
     "sellPrice": 0,
     "setId": "fierce-deity",
     "sourceContent": "amiibo",
@@ -1465,7 +1465,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Fierce Deity Mask",
+    "displayName": "Fierce Deity Mask",
     "sellPrice": 0,
     "setId": "fierce-deity",
     "sourceContent": "amiibo",
@@ -1532,7 +1532,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Flamebreaker Armor",
+    "displayName": "Flamebreaker Armor",
     "sellPrice": 150,
     "setId": "flamebreaker",
     "sourceContent": "base-game",
@@ -1599,7 +1599,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Flamebreaker Boots",
+    "displayName": "Flamebreaker Boots",
     "sellPrice": 175,
     "setId": "flamebreaker",
     "sourceContent": "base-game",
@@ -1666,7 +1666,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Flamebreaker Helm",
+    "displayName": "Flamebreaker Helm",
     "sellPrice": 500,
     "setId": "flamebreaker",
     "sourceContent": "base-game",
@@ -1733,7 +1733,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Gerudo Sirwal",
+    "displayName": "Gerudo Sirwal",
     "sellPrice": 45,
     "setId": "gerudo",
     "sourceContent": "base-game",
@@ -1747,7 +1747,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Gerudo Top",
+    "displayName": "Gerudo Top",
     "sellPrice": 45,
     "setId": "gerudo",
     "sourceContent": "base-game",
@@ -1761,7 +1761,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Gerudo Veil",
+    "displayName": "Gerudo Veil",
     "sellPrice": 45,
     "setId": "gerudo",
     "sourceContent": "base-game",
@@ -1775,7 +1775,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Hylian Hood",
+    "displayName": "Hylian Hood",
     "sellPrice": 15,
     "setId": "hylian",
     "sourceContent": "base-game",
@@ -1838,7 +1838,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Hylian Trousers",
+    "displayName": "Hylian Trousers",
     "sellPrice": 25,
     "setId": "hylian",
     "sourceContent": "base-game",
@@ -1901,7 +1901,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Hylian Tunic",
+    "displayName": "Hylian Tunic",
     "sellPrice": 30,
     "setId": "hylian",
     "sourceContent": "base-game",
@@ -1964,7 +1964,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Island Lobster Shirt",
+    "displayName": "Island Lobster Shirt",
     "sellPrice": 0,
     "sourceContent": "champions-ballad",
     "upgradeable": false,
@@ -1977,7 +1977,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Korok Mask",
+    "displayName": "Korok Mask",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -1990,7 +1990,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Lizalfos Mask",
+    "displayName": "Lizalfos Mask",
     "sellPrice": 29,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -2003,7 +2003,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Lynel Mask",
+    "displayName": "Lynel Mask",
     "sellPrice": 39,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -2016,7 +2016,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Majora's Mask",
+    "displayName": "Majora's Mask",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -2029,7 +2029,7 @@
       "armor",
       "headgear"
     ],
-    "name": "Midna's Helmet",
+    "displayName": "Midna's Helmet",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -2042,7 +2042,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Moblin Mask",
+    "displayName": "Moblin Mask",
     "sellPrice": 19,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -2055,7 +2055,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Nintendo Switch Shirt",
+    "displayName": "Nintendo Switch Shirt",
     "sellPrice": 0,
     "sourceContent": "expansion-pass",
     "upgradeable": false,
@@ -2068,7 +2068,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Old Shirt",
+    "displayName": "Old Shirt",
     "sellPrice": 15,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -2081,7 +2081,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Opal Earrings",
+    "displayName": "Opal Earrings",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2147,7 +2147,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Phantom Armor",
+    "displayName": "Phantom Armor",
     "sellPrice": 0,
     "setId": "phantom",
     "sourceContent": "master-trials",
@@ -2161,7 +2161,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Phantom Ganon Armor",
+    "displayName": "Phantom Ganon Armor",
     "sellPrice": 0,
     "setId": "phantom-ganon",
     "sourceContent": "champions-ballad",
@@ -2175,7 +2175,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Phantom Ganon Greaves",
+    "displayName": "Phantom Ganon Greaves",
     "sellPrice": 0,
     "setId": "phantom-ganon",
     "sourceContent": "champions-ballad",
@@ -2189,7 +2189,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Phantom Ganon Skull",
+    "displayName": "Phantom Ganon Skull",
     "sellPrice": 0,
     "setId": "phantom-ganon",
     "sourceContent": "champions-ballad",
@@ -2203,7 +2203,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Phantom Greaves",
+    "displayName": "Phantom Greaves",
     "sellPrice": 0,
     "setId": "phantom",
     "sourceContent": "master-trials",
@@ -2217,7 +2217,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Phantom Helmet",
+    "displayName": "Phantom Helmet",
     "sellPrice": 0,
     "setId": "phantom",
     "sourceContent": "master-trials",
@@ -2231,7 +2231,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Radiant Mask",
+    "displayName": "Radiant Mask",
     "sellPrice": 200,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2297,7 +2297,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Radiant Shirt",
+    "displayName": "Radiant Shirt",
     "sellPrice": 200,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2363,7 +2363,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Radiant Tights",
+    "displayName": "Radiant Tights",
     "sellPrice": 200,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2429,7 +2429,7 @@
       "headgear",
       "mask"
     ],
-    "name": "Ravio's Hood",
+    "displayName": "Ravio's Hood",
     "sellPrice": 0,
     "sourceContent": "champions-ballad",
     "upgradeable": false,
@@ -2442,7 +2442,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Royal Guard Boots",
+    "displayName": "Royal Guard Boots",
     "sellPrice": 0,
     "sourceContent": "champions-ballad",
     "setId": "royal-guard",
@@ -2456,7 +2456,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Royal Guard Cap",
+    "displayName": "Royal Guard Cap",
     "sellPrice": 0,
     "setId": "royal-guard",
     "sourceContent": "champions-ballad",
@@ -2470,7 +2470,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Royal Guard Uniform",
+    "displayName": "Royal Guard Uniform",
     "sellPrice": 0,
     "setId": "royal-guard",
     "sourceContent": "champions-ballad",
@@ -2484,7 +2484,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Rubber Armor",
+    "displayName": "Rubber Armor",
     "sellPrice": 600,
     "setId": "rubber",
     "sourceContent": "base-game",
@@ -2547,7 +2547,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Rubber Helm",
+    "displayName": "Rubber Helm",
     "sellPrice": 600,
     "setId": "rubber",
     "sourceContent": "base-game",
@@ -2610,7 +2610,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Rubber Tights",
+    "displayName": "Rubber Tights",
     "sellPrice": 600,
     "setId": "rubber",
     "sourceContent": "base-game",
@@ -2673,7 +2673,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Ruby Circlet",
+    "displayName": "Ruby Circlet",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2739,7 +2739,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Salvager Headwear",
+    "displayName": "Salvager Headwear",
     "sellPrice": 0,
     "setId": "salvager",
     "sourceContent": "xenoblade",
@@ -2753,7 +2753,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Salvager Trousers",
+    "displayName": "Salvager Trousers",
     "sellPrice": 0,
     "setId": "salvager",
     "sourceContent": "xenoblade",
@@ -2767,7 +2767,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Salvager Vest",
+    "displayName": "Salvager Vest",
     "sellPrice": 0,
     "setId": "salvager",
     "sourceContent": "xenoblade",
@@ -2781,7 +2781,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Sand Boots",
+    "displayName": "Sand Boots",
     "sellPrice": 200,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2847,7 +2847,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Snow Boots",
+    "displayName": "Snow Boots",
     "sellPrice": 200,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2913,7 +2913,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Sapphire Circlet",
+    "displayName": "Sapphire Circlet",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -2979,7 +2979,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Sheik's Mask",
+    "displayName": "Sheik's Mask",
     "sellPrice": 0,
     "sourceContent": "amiibo",
     "upgradeable": true,
@@ -3045,7 +3045,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Snowquill Headdress",
+    "displayName": "Snowquill Headdress",
     "sellPrice": 250,
     "setId": "snowquill",
     "sourceContent": "base-game",
@@ -3108,7 +3108,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Snowquill Trousers",
+    "displayName": "Snowquill Trousers",
     "sellPrice": 140,
     "setId": "snowquill",
     "sourceContent": "base-game",
@@ -3171,7 +3171,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Snowquill Tunic",
+    "displayName": "Snowquill Tunic",
     "sellPrice": 150,
     "setId": "snowquill",
     "sourceContent": "base-game",
@@ -3234,7 +3234,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Soldier's Armor",
+    "displayName": "Soldier's Armor",
     "sellPrice": 65,
     "setId": "soldier",
     "sourceContent": "base-game",
@@ -3301,7 +3301,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Soldier's Greaves",
+    "displayName": "Soldier's Greaves",
     "sellPrice": 50,
     "setId": "soldier",
     "sourceContent": "base-game",
@@ -3368,7 +3368,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Soldier's Helm",
+    "displayName": "Soldier's Helm",
     "sellPrice": 45,
     "setId": "soldier",
     "sourceContent": "base-game",
@@ -3435,7 +3435,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Stealth Chest Guard",
+    "displayName": "Stealth Chest Guard",
     "sellPrice": 175,
     "setId": "stealth",
     "sourceContent": "base-game",
@@ -3498,7 +3498,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Stealth Mask",
+    "displayName": "Stealth Mask",
     "sellPrice": 125,
     "setId": "stealth",
     "sourceContent": "base-game",
@@ -3561,7 +3561,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Stealth Tights",
+    "displayName": "Stealth Tights",
     "sellPrice": 150,
     "setId": "stealth",
     "sourceContent": "base-game",
@@ -3624,7 +3624,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Thunder Helm",
+    "displayName": "Thunder Helm",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -3637,7 +3637,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Tingle's Hood",
+    "displayName": "Tingle's Hood",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -3650,7 +3650,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tingle's Shirt",
+    "displayName": "Tingle's Shirt",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -3663,7 +3663,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Tingle's Tights",
+    "displayName": "Tingle's Tights",
     "sellPrice": 0,
     "sourceContent": "master-trials",
     "upgradeable": false,
@@ -3676,7 +3676,7 @@
       "headgear",
       "jewelry"
     ],
-    "name": "Topaz Earrings",
+    "displayName": "Topaz Earrings",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -3742,7 +3742,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Trousers of the Hero",
+    "displayName": "Trousers of the Hero",
     "sellPrice": 125,
     "setId": "hero",
     "sourceContent": "amiibo",
@@ -3809,7 +3809,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Trousers of the Sky",
+    "displayName": "Trousers of the Sky",
     "sellPrice": 125,
     "setId": "hero-of-the-sky",
     "sourceContent": "amiibo",
@@ -3876,7 +3876,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Trousers of the Wild",
+    "displayName": "Trousers of the Wild",
     "sellPrice": 0,
     "setId": "wild",
     "sourceContent": "base-game",
@@ -3943,7 +3943,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Trousers of the Wind",
+    "displayName": "Trousers of the Wind",
     "sellPrice": 125,
     "setId": "hero-of-the-wind",
     "sourceContent": "amiibo",
@@ -4010,7 +4010,7 @@
       "armor",
       "trousers"
     ],
-    "name": "Trousers of Time",
+    "displayName": "Trousers of Time",
     "sellPrice": 125,
     "setId": "hero-of-time",
     "sourceContent": "amiibo",
@@ -4077,7 +4077,7 @@
       "armor",
       "trousers"
     ],
-    "name": "Trousers of Twilight",
+    "displayName": "Trousers of Twilight",
     "sellPrice": 125,
     "setId": "hero-of-twilight",
     "sourceContent": "amiibo",
@@ -4144,7 +4144,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of the Hero",
+    "displayName": "Tunic of the Hero",
     "sellPrice": 125,
     "setId": "hero",
     "sourceContent": "amiibo",
@@ -4211,7 +4211,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of the Sky",
+    "displayName": "Tunic of the Sky",
     "sellPrice": 125,
     "setId": "hero-of-the-sky",
     "sourceContent": "amiibo",
@@ -4278,7 +4278,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of the Wild",
+    "displayName": "Tunic of the Wild",
     "sellPrice": 0,
     "setId": "wild",
     "sourceContent": "base-game",
@@ -4345,7 +4345,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of the Wind",
+    "displayName": "Tunic of the Wind",
     "sellPrice": 125,
     "setId": "hero-of-the-wind",
     "sourceContent": "amiibo",
@@ -4412,7 +4412,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of Time",
+    "displayName": "Tunic of Time",
     "sellPrice": 125,
     "setId": "hero-of-time",
     "sourceContent": "amiibo",
@@ -4479,7 +4479,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Tunic of Twilight",
+    "displayName": "Tunic of Twilight",
     "sellPrice": 125,
     "setId": "hero-of-twilight",
     "sourceContent": "amiibo",
@@ -4546,7 +4546,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Vah Medoh Divine Helm",
+    "displayName": "Vah Medoh Divine Helm",
     "sellPrice": 0,
     "sourceContent": "amiibo",
     "upgradeable": false,
@@ -4559,7 +4559,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Vah Naboris Divine Helm",
+    "displayName": "Vah Naboris Divine Helm",
     "sellPrice": 0,
     "sourceContent": "amiibo",
     "upgradeable": false,
@@ -4572,7 +4572,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Vah Rudania Divine Helm",
+    "displayName": "Vah Rudania Divine Helm",
     "sellPrice": 0,
     "sourceContent": "amiibo",
     "upgradeable": false,
@@ -4585,7 +4585,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Vah Ruta Divine Helm",
+    "displayName": "Vah Ruta Divine Helm",
     "sellPrice": 0,
     "sourceContent": "amiibo",
     "upgradeable": false,
@@ -4598,7 +4598,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Warm Doublet",
+    "displayName": "Warm Doublet",
     "sellPrice": 20,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -4611,7 +4611,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Well-Worn Trousers",
+    "displayName": "Well-Worn Trousers",
     "sellPrice": 15,
     "sourceContent": "base-game",
     "upgradeable": false,
@@ -4624,7 +4624,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Zant's Helmet",
+    "displayName": "Zant's Helmet",
     "sellPrice": 0,
     "sourceContent": "champions-ballad",
     "upgradeable": false,
@@ -4637,7 +4637,7 @@
       "armor",
       "tunic"
     ],
-    "name": "Zora Armor",
+    "displayName": "Zora Armor",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -4699,7 +4699,7 @@
       "armor",
       "greaves"
     ],
-    "name": "Zora Greaves",
+    "displayName": "Zora Greaves",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
@@ -4761,7 +4761,7 @@
       "headgear",
       "armor"
     ],
-    "name": "Zora Helm",
+    "displayName": "Zora Helm",
     "sellPrice": 0,
     "sourceContent": "base-game",
     "upgradeable": true,
