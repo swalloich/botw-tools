@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { setItemLocal, removeItemLocal } from '../storageUtilities'
+import { setItemLocal, removeItemLocal } from '../utilities'
 
 function useItems() {
   const [trackedItems, setTrackedItems] = useState([])
