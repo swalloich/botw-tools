@@ -5,6 +5,13 @@ function getAllItemsLocal() {
   return []
 }
 
+function getApiUrl() {
+  if (process.env.REACT_APP_ENV === 'development') {
+    return process.env.REACT_APP_DEV_API_URL
+  }
+  return process.env.REACT_APP_PROD_API_URL
+}
+
 /**
  * Returns an array of objects containing armor data from local storage.
  * The expexted shape of this object is:
@@ -86,4 +93,4 @@ function setItemLocal(itemId, qty = 1) {
   localStorage.setItem('botw-items', JSON.stringify(items))
 }
 
-export { getAllItemsLocal, getArmorLocal, getItemLocal, removeArmorLocal, removeItemLocal, setArmorLocal, setItemLocal }
+export { getAllItemsLocal, getApiUrl, getArmorLocal, getItemLocal, removeArmorLocal, removeItemLocal, setArmorLocal, setItemLocal }
