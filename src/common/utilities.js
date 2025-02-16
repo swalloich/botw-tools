@@ -22,4 +22,7 @@ export function getItemData() {
     .then((repsonse) => {
       return repsonse.data
     })
+    .catch((error) => {
+      console.error(error)
+    })
 }
