@@ -1,41 +1,17 @@
-import { useCallback, useState } from 'react'
-import { setArmorLocal, getArmorLocal, removeArmorLocal } from '../utilities'
-import armorData from '../data/armor.json'
+import { useEffect, useState } from 'react'
+import { getArmorData } from '../utilities'
 
 function useArmor() {
-  const [trackedArmor, setTrackedArmor] = useState(getArmorLocal())
+  const [trackedItemIds, setTrackedItemIds] = useState([])
+  const [armorData, setArmorData] = useState([])
 
-  const trackArmor = useCallback((armorId) => {
-    const armor = armorData[armorId]
-    if (!armor) {
-      return
-    }
-    setArmorLocal(armorId, 0)
-    setTrackedArmor(getArmorLocal())
+  useEffect(() => {
+    getArmorData((data) => {
+      setArmorData(data)
+    })
   }, [])
 
-  const untrackArmor = useCallback((armorId) => {
-    removeArmorLocal(armorId)
-    setTrackedArmor(getArmorLocal())
-  }, [])
-
-  const updateTrackedArmor = useCallback((id, level) => {
-    const armor = armorData[id]
-    if (!armor) {
-      return
-    }
-    armor.level = level
-    setArmorLocal(id, level)
-    setTrackedArmor(getArmorLocal())
-  }, [])
-
-  return {
-    trackedArmor: trackedArmor,
-    allArmor: armorData,
-    trackArmor,
-    untrackArmor,
-    updateTrackedArmor,
-  }
+  return { armor: armorData }
 }
 
 export default useArmor
