@@ -1,38 +1,17 @@
-import { useCallback, useState } from 'react'
-import { setItemLocal, removeItemLocal } from '../utilities'
+import { useEffect, useState } from 'react'
+import { getItemData } from '../utilities'
 
 function useItems() {
-  const [trackedItems, setTrackedItems] = useState([])
+  const [trackedItemIds, setTrackedItemIds] = useState([])
+  const [itemData, setItemData] = useState([])
 
-  const trackItem = useCallback((itemId, qty) => {
-    setItemLocal(itemId, qty)
-    setTrackedItems({...trackedItems, itemId: { qty }})
-  }, [trackedItems])
-
-  const untrackItem = useCallback((itemId) => {
-    removeItemLocal(itemId)
-    setTrackedItems((prev) => {
-      const next = { ...prev }
-      delete next[itemId]
-      return next
+  useEffect(() => {
+    getItemData((data) => {
+      setItemData(data)
     })
   }, [])
 
-  const updateTrackedItem = useCallback((itemId, qty) => {
-    setItemLocal(itemId, qty)
-    setTrackedItems((prev) => {
-      const next = { ...prev }
-      next[itemId].qty = qty
-      return next
-    })
-  }, [])
-
-  return {
-    items: trackedItems,
-    trackItem,
-    untrackItem,
-    updateTrackedItem,
-  }
+  return { items: itemData }
 }
 
 export default useItems

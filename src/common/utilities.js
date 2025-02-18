@@ -17,10 +17,10 @@ export function getArmorData(setState) {
     })
 }
 
-export function getItemData() {
+export function getItemData(setState) {
   axios.get(`${getApiBase()}/items`)
     .then((repsonse) => {
-      return repsonse.data
+      setState(repsonse.data)
     })
     .catch((error) => {
       console.error(error)
