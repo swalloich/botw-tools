@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getItemData } from '../utilities'
+import { getItemData } from './utilities'
 
 function useItems() {
   const [trackedItemIds, setTrackedItemIds] = useState([])

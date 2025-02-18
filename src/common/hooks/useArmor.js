@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getArmorData } from '../utilities'
+import { getArmorData } from './utilities'
 
 function useArmor() {
   const [trackedItemIds, setTrackedItemIds] = useState([])
