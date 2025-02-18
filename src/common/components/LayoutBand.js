@@ -1,9 +1,9 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react'
 import PropTypes from 'prop-types'
+/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 
-function LayoutBand({children, direction = 'column'}) {
+export default function LayoutBand({children, direction = 'column'}) {
   const wrapperCSS = css`
     display: flex;
     flex-direction: ${direction};
@@ -23,5 +23,3 @@ LayoutBand.propTypes = {
   children: PropTypes.node.isRequired,
   direction: PropTypes.oneOf(['row', 'column'])
 }
-
-export default LayoutBand

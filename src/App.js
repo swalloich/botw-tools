@@ -3,12 +3,12 @@ import PageWrapper from './common/components/PageWrapper'
 import Clothing from './pages/Clothing'
 import Cooking from './pages/Cooking'
 import Dashboard from './pages/Dashboard'
-import Inventory from './pages/Inventory'
+import Items from './pages/Items'
 
 function App() {
   const links = [
     { to: '/', label: 'Dashboard' },
-    { to: 'inventory', label: 'Inventory' },
+    { to: 'items', label: 'items' },
     { to: 'clothing', label: 'Clothing' },
     { to: 'cooking', label: 'Cooking' },
   ]
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<PageWrapper links={links} />}>
           <Route index element={<Dashboard />} />
-          <Route path="inventory" element={<Inventory />} />
+          <Route path="items" element={<Items />} />
           <Route path="clothing" element={<Clothing />} />
           <Route path="cooking" element={<Cooking />} />
         </Route>
