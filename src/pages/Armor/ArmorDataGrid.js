@@ -3,7 +3,14 @@ import { ArmorCard, Grid } from '../../common/components'
 import { useArmorContext } from '../../common/components/ArmorProvider'
 
 function ArmorDataGrid() {
-  const { data, loading, error, trackArmor, trackingData, untrackArmor } = useArmorContext()
+  const {
+    data,
+    loading,
+    error,
+    trackArmor,
+    trackingData,
+    untrackArmor
+  } = useArmorContext()
 
   const setTracking = useCallback((armorId, inInventory) => {
     if (inInventory) {

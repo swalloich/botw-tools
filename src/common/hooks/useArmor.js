@@ -44,7 +44,17 @@ function useArmor() {
     localStorage.setItem('trackedArmorIds', JSON.stringify(newTrackedArmorIds))
   }, [trackedArmorIds, setTrackedArmorIds])
 
-  return { data: armorData, trackingData: trackedArmorIds, loading, error, trackArmor, untrackArmor }
+  const updateArmorLevel = useCallback((armorId, level) => {
+    if (trackedArmorIds[armorId] === undefined) return
+    if (level < 0) level = 0
+    if (level > 4) level = 4
+    const newTrackedArmorIds = { ...trackedArmorIds }
+    newTrackedArmorIds[armorId] = { level }
+    setTrackedArmorIds(newTrackedArmorIds)
+    localStorage.setItem('trackedArmorIds', JSON.stringify(newTrackedArmorIds))
+  }, [trackedArmorIds, setTrackedArmorIds])
+
+  return { data: armorData, trackingData: trackedArmorIds, loading, error, trackArmor, untrackArmor, updateArmorLevel }
 }
 
 export default useArmor

@@ -1,20 +1,15 @@
 import React from 'react'
-import { Grid, LayoutBand } from '../../common/components'
+import { LayoutBand } from '../../common/components'
 import useItems from '../../common/hooks/useItems'
+import ItemDataGrid from './ItemDataGrid'
 
 function Items(props) {
-  const { items } = useItems()
+  const { data } = useItems()
 
   return (
     <LayoutBand>
       <h1>Items</h1>
-      <Grid>
-        {items.map((item) => (
-          <div key={item.slug}>
-            <h2>{item.name}</h2>
-          </div>
-        ))}
-      </Grid>
+      <ItemDataGrid />
     </LayoutBand>
   )
 }
