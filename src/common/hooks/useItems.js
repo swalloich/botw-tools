@@ -1,38 +1,44 @@
-import { useCallback, useState } from 'react'
-import { setItemLocal, removeItemLocal } from '../storageUtilities'
+import axios from 'axios'
+import { useCallback, useEffect, useState } from 'react'
+import { getApiBase, getLocalStorageJSON } from './utilities'
 
 function useItems() {
-  const [trackedItems, setTrackedItems] = useState([])
+  const [possessedItems, setTrackedItemIds] = useState(getLocalStorageJSON('trackedItemIds') || {})
+  const [itemData, setItemData] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
-  const trackItem = useCallback((itemId, qty) => {
-    setItemLocal(itemId, qty)
-    setTrackedItems({...trackedItems, itemId: { qty }})
-  }, [trackedItems])
-
-  const untrackItem = useCallback((itemId) => {
-    removeItemLocal(itemId)
-    setTrackedItems((prev) => {
-      const next = { ...prev }
-      delete next[itemId]
-      return next
-    })
+  useEffect(() => {
+    axios.get(`${getApiBase()}/items`)
+      .then((repsonse) => {
+        setLoading(false)
+        setItemData(repsonse.data)
+      })
+      .catch((error) => {
+        setLoading(false)
+        setError(error)
+      })
   }, [])
 
-  const updateTrackedItem = useCallback((itemId, qty) => {
-    setItemLocal(itemId, qty)
-    setTrackedItems((prev) => {
-      const next = { ...prev }
-      next[itemId].qty = qty
-      return next
-    })
-  }, [])
+  /**
+   * Sets the quantity of an item in the inventory. If the quantity is 0, the item is removed from the inventory.
+   * @param {string} itemId The ID of the item to set the quantity of.
+   * @param {number} qty The quantity of the item in the inventory.
+   * @returns {void}
+   */
+  const setQty = useCallback((itemId, qty) => {
+    if (qty <= 0) {
+      const newTrackedItemIds = { ...possessedItems }
+      delete newTrackedItemIds[itemId]
+      setTrackedItemIds(newTrackedItemIds)
+      localStorage.setItem('trackedItemIds', JSON.stringify(newTrackedItemIds))
+    } else {
+      setTrackedItemIds({ ...possessedItems, [itemId]: qty })
+      localStorage.setItem('trackedItemIds', JSON.stringify({ ...possessedItems, [itemId]: qty }))
+    }
+  }, [possessedItems, setTrackedItemIds])
 
-  return {
-    items: trackedItems,
-    trackItem,
-    untrackItem,
-    updateTrackedItem,
-  }
+  return { data: itemData, loading, error, possessedItems, setQty }
 }
 
 export default useItems

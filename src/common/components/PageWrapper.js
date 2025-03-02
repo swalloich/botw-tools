@@ -1,31 +1,28 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+import { Outlet } from 'react-router'
 import { css } from '@emotion/react'
+import NavBar from './NavBar'
+
+const wrapperCSS = css`
+  display: flex;
+  flex-direction: column;
+`
+
+const headerCss= css`
+  display: flex;
+  padding: 8px 24px;
+  background-color: white;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+`
 
 function PageWrapper({links}) {
-
-  const wrapperCSS = css`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    & .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  `
-
   return (
     <div css={wrapperCSS}>
-      <nav>
-        <ul>
-          {links.map((link) => (
-            <li key={link.to}>
-              <Link to={link.to}>{link.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <header css={headerCss}>
+        <img src="https://placehold.co/150x75" alt="" width={150} height={75} />
+        <NavBar links={links} />
+      </header>
       <main>
         <Outlet />
       </main>

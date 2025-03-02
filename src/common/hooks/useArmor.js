@@ -1,40 +1,60 @@
-import { useCallback, useState } from 'react'
-import { setArmorLocal, getArmorLocal, removeArmorLocal } from '../storageUtilities'
-import armorData from '../data/armor.json'
+import axios from 'axios'
+import { useCallback, useEffect, useState } from 'react'
+import { getApiBase, getLocalStorageJSON } from './utilities'
 
 function useArmor() {
-  const [trackedArmor, setTrackedArmor] = useState(getArmorLocal())
+  const [trackedArmorIds, setTrackedArmorIds] = useState(getLocalStorageJSON('trackedArmorIds') || {})
+  const [armorData, setArmorData] = useState({})
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
+  useEffect(() => {
+    axios.get(`${getApiBase()}/armor`)
+      .then((repsonse) => {
+        setLoading(false)
+        setArmorData(repsonse.data)
+      })
+      .catch((error) => {
+        setLoading(false)
+        setError(error)
+      })
+  }, [])
+
+  /**
+   * Sets an armor item as tracked.
+   * @param {string} armorId The ID of the armor item to track.
+   * @returns {void}
+   */
   const trackArmor = useCallback((armorId) => {
-    const armor = armorData[armorId]
-    if (!armor) {
-      return
-    }
-    setArmorLocal(armorId, 0)
-    setTrackedArmor(getArmorLocal())
-  }, [])
+    if (trackedArmorIds[armorId] !== undefined) return
+    setTrackedArmorIds({ ...trackedArmorIds, [armorId]: 0 })
+    localStorage.setItem('trackedArmorIds', JSON.stringify({ ...trackedArmorIds, [armorId]: { level: 0 } }))
+  }, [trackedArmorIds, setTrackedArmorIds])
 
+  /**
+   * Untracks an armor item. data associated with the item is removed.
+   * @param {string} armorId The ID of the armor item to untrack.
+   * @returns {void}
+   */
   const untrackArmor = useCallback((armorId) => {
-    removeArmorLocal(armorId)
-    setTrackedArmor(getArmorLocal())
-  }, [])
+    if (trackedArmorIds[armorId] === undefined) return
+    const newTrackedArmorIds = { ...trackedArmorIds }
+    delete newTrackedArmorIds[armorId]
+    setTrackedArmorIds(newTrackedArmorIds)
+    localStorage.setItem('trackedArmorIds', JSON.stringify(newTrackedArmorIds))
+  }, [trackedArmorIds, setTrackedArmorIds])
 
-  const updateTrackedArmor = useCallback((id, level) => {
-    const armor = armorData[id]
-    if (!armor) {
-      return
-    }
-    armor.level = level
-    setArmorLocal(id, level)
-    setTrackedArmor(getArmorLocal())
-  }, [])
+  const updateArmorLevel = useCallback((armorId, level) => {
+    if (trackedArmorIds[armorId] === undefined) return
+    if (level < 0) level = 0
+    if (level > 4) level = 4
+    const newTrackedArmorIds = { ...trackedArmorIds }
+    newTrackedArmorIds[armorId] = { level }
+    setTrackedArmorIds(newTrackedArmorIds)
+    localStorage.setItem('trackedArmorIds', JSON.stringify(newTrackedArmorIds))
+  }, [trackedArmorIds, setTrackedArmorIds])
 
-  return {
-    armor: trackedArmor,
-    trackArmor,
-    untrackArmor,
-    updateTrackedArmor,
-  }
+  return { data: armorData, trackingData: trackedArmorIds, loading, error, trackArmor, untrackArmor, updateArmorLevel }
 }
 
 export default useArmor

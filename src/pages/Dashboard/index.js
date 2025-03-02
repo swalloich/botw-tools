@@ -1,10 +1,11 @@
 import React from 'react'
+import LayoutBand from '../../common/components/LayoutBand'
 
 function Dashboard(props) {
   return (
-    <div>
+    <LayoutBand>
       <h1>Dashboard</h1>
-    </div>
+    </LayoutBand>
   )
 }
 
