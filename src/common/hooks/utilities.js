@@ -7,16 +7,6 @@ export function getApiBase() {
   return process.env.REACT_APP_PROD_API_BASE
 }
 
-export function getArmorData(setState) {
-  axios.get(`${getApiBase()}/armor`)
-    .then((repsonse) => {
-      setState(repsonse.data)
-    })
-    .catch((error) => {
-      console.error(error)
-    })
-}
-
 export function getItemData(setState) {
   axios.get(`${getApiBase()}/items`)
     .then((repsonse) => {
@@ -25,4 +15,8 @@ export function getItemData(setState) {
     .catch((error) => {
       console.error(error)
     })
+}
+
+export function getLocalStorageJSON(key) {
+  return JSON.parse(localStorage.getItem(key))
 }
