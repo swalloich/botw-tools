@@ -1,15 +1,15 @@
 import React from 'react'
-import { ItemCard, Grid, useItemContext } from '../../common/components'
+import { ItemCard, Grid, useItemState } from '../../common/components'
 import { useDeviceWidth } from '../../common/hooks'
 
 function ItemDataGrid() {
+  const [itemState,, setQty] = useItemState()
   const {
     data,
     loading,
     error,
     possessedItems,
-    setQty
-  } = useItemContext()
+  } = itemState
 
   return (
     <Grid columns={useDeviceWidth({ default: 2, sm: 4, md: 5, lg: 6, xxl: 7 })}>

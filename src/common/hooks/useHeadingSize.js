@@ -1,6 +1,3 @@
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react'
-
 const headingSizes = {
   1: '2em',
   2: '1.5em',

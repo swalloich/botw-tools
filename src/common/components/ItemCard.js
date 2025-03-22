@@ -6,7 +6,7 @@ import { useCallback } from 'react'
 import { Card, Heading, IconButton } from '.'
 import { useHeadingSize } from '../hooks'
 
-function ItemCard({ headingLevel = 2, headingSize, data, qty, setQty }) {
+function ItemCard({ headingLevel = 2, headingSize, data, qty, readOnly, setQty }) {
   const headingSizeValue = useHeadingSize({ size: headingSize })
   const handleAdd = useCallback(() => {
     setQty(qty + 1)
@@ -29,22 +29,25 @@ function ItemCard({ headingLevel = 2, headingSize, data, qty, setQty }) {
         <div css={css`margin-right: 0.85rem;`}>
           <p>{qty}</p>
         </div>
-        <div
-          css={css`
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          margin-right: 0.85rem;
+        {!readOnly && (
+          <div
+            css={css`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 0.85rem;
 
-          button:first-of-type {
-            margin-bottom: 0.5rem;
-          }
-        `}
-        >
-          <IconButton icon={faCaretUp} onClick={handleAdd} />
-          <IconButton icon={faCaretDown} onClick={handleRemove} />
-        </div>
+            button:first-of-type {
+              margin-bottom: 0.5rem;
+            }
+          `}
+          >
+            <IconButton icon={faCaretUp} onClick={handleAdd} />
+            <IconButton icon={faCaretDown} onClick={handleRemove} />
+          </div>
+        )}
+
         <img src="https://placehold.co/50" alt="" />
       </div>
       <Heading
