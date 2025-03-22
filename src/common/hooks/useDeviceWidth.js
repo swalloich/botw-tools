@@ -46,7 +46,7 @@ const widthBreakpoints = {
   xxl: new Breakpoint(1400, 'xxl')
 }
 
-export function useViewportWidth() {
+function useViewportWidth() {
   const [width, setWidth] = useState(window.innerWidth)
   const [breakpoint, setBreakpoint] = useState(widthBreakpoints.xs)
 

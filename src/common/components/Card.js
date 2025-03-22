@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { css } from '@emotion/react'
 
-function Card({children}) {
+function Card({ children, hAlign = 'start', ...props }) {
   const cardCSS = css`
+    display: flex;
+    flex-direction: column;
+    align-items: ${hAlign};
     background-color: white;
     border-radius: 8px;
     padding: 16px;
@@ -12,14 +15,15 @@ function Card({children}) {
   `
 
   return (
-    <div css={cardCSS}>
+    <div css={cardCSS} {...props}>
       {children}
     </div>
   )
 }
 
 Card.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  hAlign: PropTypes.oneOf(['center', 'start', 'end'])
 }
 
 export default Card

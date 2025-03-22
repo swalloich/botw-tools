@@ -4,8 +4,10 @@ import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons'
 import propTypes from 'prop-types'
 import { useCallback } from 'react'
 import { Card, Heading, IconButton } from '.'
+import { useHeadingSize } from '../hooks'
 
-function ItemCard({ headingLevel = 3, data, qty, setQty }) {
+function ItemCard({ headingLevel = 2, headingSize, data, qty, setQty }) {
+  const headingSizeValue = useHeadingSize({ size: headingSize })
   const handleAdd = useCallback(() => {
     setQty(qty + 1)
   }, [setQty, qty])
@@ -15,7 +17,7 @@ function ItemCard({ headingLevel = 3, data, qty, setQty }) {
   }, [setQty, qty])
 
   return (
-    <Card>
+    <Card hAlign="center">
       <div
         css={
           css`
@@ -24,13 +26,16 @@ function ItemCard({ headingLevel = 3, data, qty, setQty }) {
           `
         }
       >
+        <div css={css`margin-right: 0.85rem;`}>
+          <p>{qty}</p>
+        </div>
         <div
           css={css`
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          margin-right: 1rem;
+          margin-right: 0.85rem;
 
           button:first-of-type {
             margin-bottom: 0.5rem;
@@ -44,17 +49,15 @@ function ItemCard({ headingLevel = 3, data, qty, setQty }) {
       </div>
       <Heading
         css={css`
-          margin: 0.25rem 0 0.5rem 0;
+          margin-top: 0.35rem;
+          margin-bottom: 0;
+          text-align: center;
+          ${headingSize ? `${headingSizeValue}` : ''}
         `}
         level={headingLevel}
       >
         {data?.displayName}
       </Heading>
-      <p
-        css={css`
-          margin: 0;
-        `}
-        className='my-1'>Quantity: {qty}</p>
     </Card >
   )
 }
