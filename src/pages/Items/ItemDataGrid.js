@@ -1,6 +1,6 @@
 import React from 'react'
-import { ItemCard, Grid } from '../../common/components'
-import { useItemContext } from '../../common/components/ItemProvider'
+import { ItemCard, Grid, useItemContext } from '../../common/components'
+import useDeviceWidth from '../../common/hooks/useDeviceWidth'
 
 function ItemDataGrid() {
   const {
@@ -12,7 +12,7 @@ function ItemDataGrid() {
   } = useItemContext()
 
   return (
-    <Grid>
+    <Grid columns={useDeviceWidth({ default: 1, sm: 3, md: 4, xl: 6 })}>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {!loading && !error && data.map((item) => {
