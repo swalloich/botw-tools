@@ -1,18 +1,18 @@
 import React from 'react'
-import { ItemCard, Grid } from '../../common/components'
-import { useItemContext } from '../../common/components/ItemProvider'
+import { ItemCard, Grid, useItemState } from '../../common/components'
+import { useDeviceWidth } from '../../common/hooks'
 
 function ItemDataGrid() {
+  const [itemState,, setQty] = useItemState()
   const {
     data,
     loading,
     error,
     possessedItems,
-    setQty
-  } = useItemContext()
+  } = itemState
 
   return (
-    <Grid>
+    <Grid columns={useDeviceWidth({ default: 2, sm: 4, md: 5, lg: 6, xxl: 7 })}>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {!loading && !error && data.map((item) => {
@@ -20,6 +20,7 @@ function ItemDataGrid() {
         return (
           <ItemCard
             data={item}
+            headingSize={4}
             key={item.slug}
             qty={qty}
             setQty={(qty) => setQty(item._id, qty)}
