@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import EffectSelector from './EffectSelector'
 import { useCookingState } from '../CookingProvider'
 import { useItemState } from '../../../common/components'
