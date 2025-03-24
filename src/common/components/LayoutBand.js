@@ -3,13 +3,33 @@ import PropTypes from 'prop-types'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 
-export default function LayoutBand({children, direction = 'column'}) {
+export default function LayoutBand({children, direction = 'column', ...props}) {
   const wrapperCSS = css`
     display: flex;
     flex-direction: ${direction};
-    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
+
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1200) {
+      max-width: 1140px;
+    }
+
+    @media (min-width: 1400) {
+      max-width: 1320px;
+    }
   `
 
   return (
