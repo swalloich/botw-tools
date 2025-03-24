@@ -3,6 +3,7 @@ import React from 'react'
 import { Outlet } from 'react-router'
 import { css } from '@emotion/react'
 import NavBar from './NavBar'
+import LayoutBand from './LayoutBand'
 
 const wrapperCSS = css`
   display: flex;
@@ -20,8 +21,10 @@ function PageWrapper({links}) {
   return (
     <div css={wrapperCSS}>
       <header css={headerCss}>
-        <img src="https://placehold.co/150x75" alt="" width={150} height={75} />
-        <NavBar links={links} />
+        <LayoutBand direction='row'>
+          <img src="https://placehold.co/150x75" alt="" width={150} height={75} />
+          <NavBar links={links} />
+        </LayoutBand>
       </header>
       <main>
         <Outlet />

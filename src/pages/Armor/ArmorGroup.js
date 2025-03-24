@@ -5,13 +5,14 @@ import { useDeviceWidth } from '../../common/hooks'
 
 export default function ArmorGroup({ armorData, groupName, headingLevel=3, setTracking, ...props }) {
   const [armorState] = useArmorState()
+  const { atWidth } = useDeviceWidth()
   const { trackedArmor } = armorState
   const title = groupName || armorData.setId
 
   return (
     <div>
       <Heading level={headingLevel} {...props}>{title}</Heading>
-      <Grid columns={useDeviceWidth({ default: 1, md: 3 })} {...props}>
+      <Grid columns={atWidth({ default: 1, md: 3 })} {...props}>
         {armorData.items.map((item) => {
           const trackItem = (inInventory) => setTracking(item._id, inInventory)
           const isTracked = trackedArmor[item._id] !== undefined
