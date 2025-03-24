@@ -6,7 +6,7 @@ const iconButtonCss = css`
   border: none;
   background: none;
   cursor: pointer;
-  padding: 0;
+  padding: 7.5px;
   margin: 0;
 `
 
