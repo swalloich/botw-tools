@@ -1,5 +1,6 @@
 export { default as ArmorCard } from './ArmorCard'
 export { default as Card } from './Card'
+export { default as Fieldset } from './Fieldset'
 export { default as Grid } from './Grid'
 export { default as Heading } from './Heading'
 export { default as IconButton } from './IconButton'
