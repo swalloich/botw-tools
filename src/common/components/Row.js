@@ -7,6 +7,7 @@ export default function Row({ children, justify = 'flex-start', ...props }) {
     display: flex;
     flex-wrap: wrap;
     justify-content: ${justify};
+    width: 100%;
   `
 
   return (

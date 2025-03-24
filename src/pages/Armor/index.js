@@ -2,7 +2,7 @@ import React from 'react'
 import { LayoutBand } from '../../common/components'
 import ArmorDataGrid from './ArmorDataGrid'
 
-function Armor() {
+export default function Armor() {
   return (
     <LayoutBand>
       <h1>Armor</h1>
@@ -10,5 +10,3 @@ function Armor() {
     </LayoutBand>
   )
 }
-
-export default Armor

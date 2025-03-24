@@ -1,16 +1,10 @@
 import React, { useCallback } from 'react'
-import { ArmorCard, Grid } from '../../common/components'
-import { useArmorContext } from '../../common/components/ArmorProvider'
+import { useArmorState } from '../../common/components'
+import ArmorGroup from './ArmorGroup'
 
 function ArmorDataGrid() {
-  const {
-    data,
-    loading,
-    error,
-    trackArmor,
-    trackingData,
-    untrackArmor
-  } = useArmorContext()
+  const [armorState, trackArmor, untrackArmor] = useArmorState()
+  const { data, loading, error, trackedArmor } = armorState
 
   const setTracking = useCallback((armorId, inInventory) => {
     if (inInventory) {
@@ -20,43 +14,66 @@ function ArmorDataGrid() {
     }
   }, [trackArmor, untrackArmor])
 
+  if (loading || !data) return <p>Loading...</p>
+  if (error) return <p>Error: {error.message}</p>
+
+  const obtaineedArmorBySet = data
+    .filter((item) => trackedArmor[item._id] !== undefined)
+    .reduce((acc, item) => {
+      if (!acc[item.setId]) {
+        acc[item.setId] = []
+      }
+      acc[item.setId].push(item)
+      return acc
+    }, {})
+
+  const unobtainedArmorBySet = data
+    .filter((item) => trackedArmor[item._id] === undefined)
+    .reduce((acc, item) => {
+      if (!acc[item.setId]) {
+        acc[item.setId] = []
+      }
+      acc[item.setId].push(item)
+      return acc
+    }, {})
+
   return (
     <>
-      {Object.keys(trackingData).length > 0 && (
+      {Object.keys(trackedArmor).length > 0 && (
         <>
           <h2>In Inventory</h2>
-          <Grid>
-            {Object.entries(trackingData).map(([armorId, armorData]) => {
-              const item = data.find((item) => item._id === armorId)
+          {Object.entries(obtaineedArmorBySet)
+            .sort(([armorIdA], [armorIdB]) => armorIdA.localeCompare(armorIdB))
+            .map(([setId, items]) => {
               return (
-                <ArmorCard
-                  data={item}
-                  isTracked={true}
-                  key={armorId}
-                  setTracking={(inInventory) => setTracking(armorId, inInventory)}
+                <ArmorGroup
+                  armorData={{ setId, items }}
+                  key={setId}
+                  setTracking={setTracking}
                 />
               )
-            })}
-          </Grid>
+            })
+          }
         </>
       )}
       <h2>Not In Inventory</h2>
-      <Grid>
+      <>
         {loading && <p>Loading...</p>}
         {error && <p>Error: {error.message}</p>}
-        {!loading && !error && data.map((item) => {
-          const isTracked = trackingData[item._id] !== undefined
-          return (
-            <ArmorCard
-              data={item}
-              isTracked={isTracked}
-              key={item._id}
-              setTracking={(inInventory) => setTracking(item._id, inInventory)}
-            />
-          )
-        }
+        {!loading && !error && (
+          Object.entries(unobtainedArmorBySet)
+            .sort(([setIdA], [setIdB]) => setIdA.localeCompare(setIdB))
+            .map(([setId, items]) => {
+              return (
+                <ArmorGroup
+                  armorData={{ setId, items }}
+                  key={setId}
+                  setTracking={setTracking}
+                />
+              )
+            })
         )}
-      </Grid>
+      </>
     </>
   )
 }
