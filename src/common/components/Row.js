@@ -2,10 +2,20 @@
 import { css } from '@emotion/react'
 import PropTypes from 'prop-types'
 
-export default function Row({ children, justify = 'flex-start', ...props }) {
+const gaps = {
+  none: 0,
+  xs: '0.25rem',
+  sm: '0.5rem',
+  md: '1rem',
+  lg: '1.5rem',
+  xl: '2rem'
+}
+
+export default function Row({ children, gap='none', justify = 'flex-start', ...props }) {
   const rowCss = css`
     display: flex;
     flex-wrap: wrap;
+    gap: ${gaps[gap]};
     justify-content: ${justify};
     width: 100%;
   `
@@ -19,6 +29,7 @@ export default function Row({ children, justify = 'flex-start', ...props }) {
 
 Row.propTypes = {
   children: PropTypes.node.isRequired,
+  gap: PropTypes.oneOf(['none', 'xs', 'sm', 'md', 'lg', 'xl']),
   justify: PropTypes.oneOf([
     'center',
     'flex-end',

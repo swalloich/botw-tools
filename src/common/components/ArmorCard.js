@@ -14,31 +14,79 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
 
   const mainRowCss = css`
     display: flex;
+    width: 100%;
 
-    &[narrow]
+    &[narrow] {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
   `
-  
+
+  const headingCss = css`
+    margin: 0.5rem 0 0.75rem 0;
+
+    &[narrow] {
+      text-align: center;
+    }
+  `
+
+  const buttonRowCss = css`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    width: 100%;
+
+    .button-group {
+      display: flex;
+      gap: 0.5rem;
+
+      &[narrow] > * {
+        flex: 1 1 50%;
+      }
+    }
+
+    &[narrow] {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  `
+
   const handleClick = useCallback(() => {
     setTracking(!isTracked)
   }, [setTracking, isTracked])
 
-  const removeButton = <button onClick={handleClick}>{isTracked ? 'Remove' : 'Add'}</button>
+  const toggleInventoryPresence = <button onClick={handleClick}>{isTracked ? 'Remove' : 'Add'}</button>
+  const narrowValue = atWidth({ default: null, md: '', lg: null }) // '' creates a valueless attribute in the DOM
+
+  const nameLevelCss = css`
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    margin-inline-end: 0.5rem;
+
+    &[narrow] {
+      flex-direction: ${isTracked ? 'column-reverse' : 'column'};
+    }
+  `
 
   return (
     <Card>
-      <div css={mainRowCss} narrow={atWidth({ default: null, md: '', lg: null })}>
-        <div css={css`margin-inline-end: 0.5rem; flex: 1 0;`}>
+      <div css={mainRowCss} narrow={narrowValue}>
+        <div css={nameLevelCss} narrow={narrowValue}>
           {isTracked && <ArmorLevel level={trackedArmor[data._id] || 0} updateLevel={(newLevel) => updateArmorLevel(data._id, newLevel)} />}
-          <Heading css={css`margin: 0.5rem 0 0.75rem 0;`} level={headingLevel}>{data?.displayName}</Heading>
-          {!isTracked && removeButton}
+          <Heading css={headingCss} level={headingLevel} narrow={narrowValue}>{data?.displayName}</Heading>
+          {!isTracked && toggleInventoryPresence}
         </div>
         <img src="https://placehold.co/75" alt="" />
       </div>
       {isTracked && (
-        <Row css={css`margin-top: 0.5rem;`} justify='space-between'>
-          <button>Upgrade</button>
-          {removeButton}
-        </Row>
+        <div css={buttonRowCss} narrow={narrowValue}>
+            <button>Upgrade</button>
+          <div className='button-group' narrow={narrowValue}>
+            <button>Favorite</button>
+            {toggleInventoryPresence}
+          </div>
+        </div>
       )}
     </Card>
   )

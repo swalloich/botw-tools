@@ -69,7 +69,7 @@ function useViewportWidth() {
   const [breakpoint, setBreakpoint] = useState(widthBreakpoints.xs)
 
   useEffect(() => {
-    const handleResize = debounce(() => setWidth(window.innerWidth), 200)
+    const handleResize = debounce(() => setWidth(window.innerWidth), 50)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
