@@ -1,10 +1,9 @@
 import React, { useCallback } from 'react'
-import { useArmorState } from '../../common/components'
-import ArmorGroup from './ArmorGroup'
+import { useArmorState, ArmorGroup } from '../../common/components'
 
 function ArmorDataGrid() {
   const [armorState, trackArmor, untrackArmor] = useArmorState()
-  const { data, loading, error, trackedArmor } = armorState
+  const { data, loading, error, inInventory } = armorState
 
   const setTracking = useCallback((armorId, inInventory) => {
     if (inInventory) {
@@ -18,7 +17,7 @@ function ArmorDataGrid() {
   if (error) return <p>Error: {error.message}</p>
 
   const obtaineedArmorBySet = data
-    .filter((item) => trackedArmor[item._id] !== undefined)
+    .filter((item) => inInventory[item._id] !== undefined)
     .reduce((acc, item) => {
       if (!acc[item.setId]) {
         acc[item.setId] = []
@@ -28,7 +27,7 @@ function ArmorDataGrid() {
     }, {})
 
   const unobtainedArmorBySet = data
-    .filter((item) => trackedArmor[item._id] === undefined)
+    .filter((item) => inInventory[item._id] === undefined)
     .reduce((acc, item) => {
       if (!acc[item.setId]) {
         acc[item.setId] = []
@@ -39,7 +38,7 @@ function ArmorDataGrid() {
 
   return (
     <>
-      {Object.keys(trackedArmor).length > 0 && (
+      {Object.keys(inInventory).length > 0 && (
         <>
           <h2>In Inventory</h2>
           {Object.entries(obtaineedArmorBySet)

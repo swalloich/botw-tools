@@ -6,7 +6,8 @@ const initialState = {
   data: [],
   loading: true,
   error: null,
-  trackedArmor: getLocalStorageJSON('trackedArmor') || {},
+  inInventory: getLocalStorageJSON('inInventory') || {},
+  favorited: getLocalStorageJSON('favoritedArmor') || {}
 }
 
 function armorReducer(state, action) {
@@ -17,7 +18,7 @@ const ArmorContext = createContext()
 
 export function ArmorProvider({ children }) {
   const [armorState, armorDispatch] = useReducer(armorReducer, initialState)
-  const { trackedArmor } = armorState
+  const { inInventory } = armorState
 
   useEffect(() => {
     axios.get(`${getApiBase()}/armor`)
@@ -41,10 +42,10 @@ export function ArmorProvider({ children }) {
    * @returns {void}
    */
   const trackArmor = useCallback((armorId) => {
-    if (trackedArmor[armorId] !== undefined) return
-    armorDispatch({ trackedArmor: { ...trackedArmor, [armorId]: 0 } })
-    localStorage.setItem('trackedArmor', JSON.stringify({ ...trackedArmor, [armorId]: { level: 0 } }))
-  }, [armorDispatch, trackedArmor])
+    if (inInventory[armorId] !== undefined) return
+    armorDispatch({ inInventory: { ...inInventory, [armorId]: 0 } })
+    localStorage.setItem('inInventory', JSON.stringify({ ...inInventory, [armorId]: { level: 0 } }))
+  }, [armorDispatch, inInventory])
 
   /**
    * Untracks an armor item. data associated with the item is removed.
@@ -52,22 +53,22 @@ export function ArmorProvider({ children }) {
    * @returns {void}
    */
   const untrackArmor = useCallback((armorId) => {
-    if (trackedArmor[armorId] === undefined) return
-    const newtrackedArmor = { ...trackedArmor }
-    delete newtrackedArmor[armorId]
-    armorDispatch({ trackedArmor: newtrackedArmor })
-    localStorage.setItem('trackedArmor', JSON.stringify(newtrackedArmor))
-  }, [armorDispatch, trackedArmor])
+    if (inInventory[armorId] === undefined) return
+    const newinInventory = { ...inInventory }
+    delete newinInventory[armorId]
+    armorDispatch({ inInventory: newinInventory })
+    localStorage.setItem('inInventory', JSON.stringify(newinInventory))
+  }, [armorDispatch, inInventory])
 
   const updateArmorLevel = useCallback((armorId, level) => {
-    if (trackedArmor[armorId] === undefined) return
+    if (inInventory[armorId] === undefined) return
     if (level < 0) level = 0
     if (level > 4) level = 4
-    const newtrackedArmor = { ...trackedArmor }
-    newtrackedArmor[armorId] = level
-    armorDispatch({ trackedArmor: newtrackedArmor })
-    localStorage.setItem('trackedArmor', JSON.stringify(newtrackedArmor))
-  }, [armorDispatch, trackedArmor])
+    const newinInventory = { ...inInventory }
+    newinInventory[armorId] = level
+    armorDispatch({ inInventory: newinInventory })
+    localStorage.setItem('inInventory', JSON.stringify(newinInventory))
+  }, [armorDispatch, inInventory])
 
   const providerValues = useMemo(() => {
     return [armorState, trackArmor, untrackArmor, updateArmorLevel]

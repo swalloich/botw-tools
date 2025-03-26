@@ -1,5 +1,6 @@
 export { ArmorProvider, useArmorState } from './ArmorProvider'
 export { default as ArmorCard } from './ArmorCard'
+export { default as ArmorGroup } from './ArmorGroup'
 export { default as Card } from './Card'
 export { default as Fieldset } from './Fieldset'
 export { default as Grid } from './Grid'

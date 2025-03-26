@@ -10,7 +10,7 @@ import { useDeviceWidth } from '../hooks'
 function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
   const [armorState,,, updateArmorLevel] = useArmorState()
   const { atWidth } = useDeviceWidth()
-  const { trackedArmor } = armorState
+  const { inInventory } = armorState
 
   const mainRowCss = css`
     display: flex;
@@ -73,7 +73,7 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
     <Card>
       <div css={mainRowCss} narrow={narrowValue}>
         <div css={nameLevelCss} narrow={narrowValue}>
-          {isTracked && <ArmorLevel level={trackedArmor[data._id] || 0} updateLevel={(newLevel) => updateArmorLevel(data._id, newLevel)} />}
+          {isTracked && <ArmorLevel level={inInventory[data._id] || 0} updateLevel={(newLevel) => updateArmorLevel(data._id, newLevel)} />}
           <Heading css={headingCss} level={headingLevel} narrow={narrowValue}>{data?.displayName}</Heading>
           {!isTracked && toggleInventoryPresence}
         </div>
@@ -81,9 +81,9 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
       </div>
       {isTracked && (
         <div css={buttonRowCss} narrow={narrowValue}>
-            <button>Upgrade</button>
+            <button disabled>Upgrade</button>
           <div className='button-group' narrow={narrowValue}>
-            <button>Favorite</button>
+            <button disabled>Favorite</button>
             {toggleInventoryPresence}
           </div>
         </div>
