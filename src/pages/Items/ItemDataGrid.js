@@ -3,6 +3,7 @@ import { ItemCard, Grid, useItemState } from '../../common/components'
 import { useDeviceWidth } from '../../common/hooks'
 
 function ItemDataGrid() {
+  const { atWidth } = useDeviceWidth()
   const [itemState,, setQty] = useItemState()
   const {
     data,
@@ -12,7 +13,7 @@ function ItemDataGrid() {
   } = itemState
 
   return (
-    <Grid columns={useDeviceWidth({ default: 2, sm: 4, md: 5, lg: 6, xxl: 7 })}>
+    <Grid columns={atWidth({ default: 2, sm: 4, md: 5, lg: 6, xxl: 7 })}>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {!loading && !error && data.map((item) => {

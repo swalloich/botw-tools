@@ -17,18 +17,20 @@ function ItemCard({ headingLevel = 2, headingSize, data, qty, readOnly, setQty }
   }, [setQty, qty])
 
   return (
-    <Card hAlign="center">
+    <Card hAlign="center" padding='small'>
       <div
         css={
           css`
             display: flex;
             align-items: center;
+
+            & :not(:last-child) {
+              margin-right: 0.15rem;
+            }
           `
         }
       >
-        <div css={css`margin-right: 0.85rem;`}>
-          <p>{qty}</p>
-        </div>
+        <p>{qty}</p>
         {!readOnly && (
           <div
             css={css`
@@ -36,10 +38,8 @@ function ItemCard({ headingLevel = 2, headingSize, data, qty, readOnly, setQty }
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-right: 0.85rem;
-
             button:first-of-type {
-              margin-bottom: 0.5rem;
+              margin-bottom: 0.15rem;
             }
           `}
           >

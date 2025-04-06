@@ -6,6 +6,16 @@ class Breakpoint {
     this.name = name
   }
 
+  equals(other) {
+    if (other instanceof Breakpoint) {
+      return this.value === other.value && this.name === other.name
+    } else if (typeof other === 'number' || other instanceof Number) {
+      return this.value === other
+    } else {
+      throw new TypeError('Breakpoint.equals() requires a Breakpoint or Number')
+    }
+  }
+
   gt(other) {
     if (other instanceof Breakpoint) {
       return this.value > other.value
@@ -46,20 +56,28 @@ const widthBreakpoints = {
   xxl: new Breakpoint(1400, 'xxl')
 }
 
+function debounce(func, wait) {
+  let timeout
+  return (...args) => {
+    clearTimeout(timeout)
+    timeout = setTimeout(() => func(...args), wait)
+  }
+}
+
 function useViewportWidth() {
   const [width, setWidth] = useState(window.innerWidth)
   const [breakpoint, setBreakpoint] = useState(widthBreakpoints.xs)
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth)
+    const handleResize = debounce(() => setWidth(window.innerWidth), 50)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   useEffect(() => {
     let greatest = widthBreakpoints.xs
-    Object.entries(widthBreakpoints).forEach(([_, value]) => {
-      if (value.lte(width)) {
+    Object.entries(widthBreakpoints).forEach(([, value]) => {
+      if (value.lte(width) && value.gt(greatest)) {
         greatest = value
       }
     })
@@ -74,22 +92,26 @@ function useViewportWidth() {
  * @param {Object} breakpoints - An object containing values with the nams of the breakpoints, and the value to return when the device width is greater than the breakpoint.
  * @returns {String} - The value associated with the breakpoint greatest breakpoint that the device width is greater than or equal to.
  */
-export default function useDeviceWidth(breakpointValues) {
+export default function useDeviceWidth() {
   const currentWidth = useViewportWidth()
 
-  if (currentWidth) {
-    const usedBreakpoints = Object.keys(breakpointValues).filter(key => key !== 'default')
-    let selectedBreakpoint = 'default'
-  
-    for (const breakpoint of usedBreakpoints) {
-      if (widthBreakpoints[breakpoint].lte(currentWidth)) {
-        if (selectedBreakpoint === 'default' || widthBreakpoints[selectedBreakpoint].lt(widthBreakpoints[breakpoint])) {
-          selectedBreakpoint = breakpoint
+  const atWidth = (values) => {
+    if (currentWidth) {
+      const breakpoints = Object.keys(values).filter(key => key !== 'default')
+      let selectedBreakpoint = 'default'
+
+      for (const breakpoint of breakpoints) {
+        if (widthBreakpoints[breakpoint].lte(currentWidth)) {
+          if (selectedBreakpoint === 'default' || widthBreakpoints[selectedBreakpoint].lt(widthBreakpoints[breakpoint])) {
+            selectedBreakpoint = breakpoint
+          }
         }
       }
+      return values[selectedBreakpoint]
+    } else {
+      return values.default
     }
-    return breakpointValues[selectedBreakpoint]
-  } else {
-    return breakpointValues.default
   }
+
+  return { atWidth, currentWidth }
 }

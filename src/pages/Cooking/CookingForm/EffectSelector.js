@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { useState } from 'react'
+import { Fieldset } from '../../../common/components'
 
 const effects = {
   'attack-up': 'Attack Up',
@@ -18,8 +19,7 @@ const effects = {
 export default function EffectSelector({ legend = "Desired Effect", defaultEffect, ...props }) {
   const [selectedEffect, setSelectedEffect] = useState(defaultEffect)
   return (
-    <fieldset {...props}>
-      <legend>{legend}</legend>
+    <Fieldset legend={legend} {...props}>
       {Object.entries(effects).map(([key, value]) => (
         <label key={key}>
           <input
@@ -32,7 +32,7 @@ export default function EffectSelector({ legend = "Desired Effect", defaultEffec
           {value}
         </label>
       ))}
-    </fieldset>
+    </Fieldset>
   )
 }
 
