@@ -7,7 +7,7 @@ const initialState = {
   loading: true,
   error: null,
   inInventory: getLocalStorageJSON('inInventory') || {},
-  favorited: getLocalStorageJSON('favoritedArmor') || {}
+  filteredCategories: ['amiibo', 'xenoblade'],
 }
 
 function armorReducer(state, action) {
@@ -18,10 +18,14 @@ const ArmorContext = createContext()
 
 export function ArmorProvider({ children }) {
   const [armorState, armorDispatch] = useReducer(armorReducer, initialState)
-  const { inInventory } = armorState
+  const { inInventory, filteredCategories } = armorState
 
   useEffect(() => {
-    axios.get(`${getApiBase()}/armor`)
+    let queryParams = ''
+    if (filteredCategories.length > 0) {
+      queryParams = `?excludeSources=${filteredCategories.join(',')}`
+    }
+    axios.get(`${getApiBase()}/armor${queryParams}`)
       .then((repsonse) => {
         armorDispatch({
           data: repsonse.data,
@@ -34,7 +38,23 @@ export function ArmorProvider({ children }) {
           error
         })
       })
-  }, [])
+  }, [filteredCategories])
+
+  const addFavorite = useCallback((armorId) => {
+    const { favorited } = armorState.inInventory[armorId] || {}
+    if (favorited) return
+    const newArmorState = { ...armorState.inInventory, [armorId]: { ...armorState.inInventory[armorId], favorited: true } }
+    armorDispatch({ inInventory: newArmorState })
+    localStorage.setItem('inInventory', JSON.stringify(newArmorState))
+  }, [armorState.inInventory, armorDispatch])
+
+  const removeFavorite = useCallback((armorId) => {
+    const { favorited } = armorState.inInventory[armorId] || {}
+    if (!favorited) return
+    const newArmorState = { ...armorState.inInventory, [armorId]: { ...armorState.inInventory[armorId], favorited: undefined } }
+    armorDispatch({ inInventory: newArmorState })
+    localStorage.setItem('inInventory', JSON.stringify(newArmorState))
+  }, [armorState.inInventory, armorDispatch])
 
   /**
    * Sets an armor item as tracked.
@@ -43,8 +63,9 @@ export function ArmorProvider({ children }) {
    */
   const trackArmor = useCallback((armorId) => {
     if (inInventory[armorId] !== undefined) return
-    armorDispatch({ inInventory: { ...inInventory, [armorId]: 0 } })
-    localStorage.setItem('inInventory', JSON.stringify({ ...inInventory, [armorId]: { level: 0 } }))
+    const newinInventory = { ...inInventory, [armorId]: { level: 0 } }
+    armorDispatch({ inInventory: newinInventory })
+    localStorage.setItem('inInventory', JSON.stringify(newinInventory))
   }, [armorDispatch, inInventory])
 
   /**
@@ -60,19 +81,19 @@ export function ArmorProvider({ children }) {
     localStorage.setItem('inInventory', JSON.stringify(newinInventory))
   }, [armorDispatch, inInventory])
 
-  const updateArmorLevel = useCallback((armorId, level) => {
+  const setArmorLevel = useCallback((armorId, level) => {
     if (inInventory[armorId] === undefined) return
     if (level < 0) level = 0
     if (level > 4) level = 4
     const newinInventory = { ...inInventory }
-    newinInventory[armorId] = level
+    newinInventory[armorId] = { ...newinInventory[armorId], level }
     armorDispatch({ inInventory: newinInventory })
     localStorage.setItem('inInventory', JSON.stringify(newinInventory))
   }, [armorDispatch, inInventory])
 
   const providerValues = useMemo(() => {
-    return [armorState, trackArmor, untrackArmor, updateArmorLevel]
-  }, [armorState, trackArmor, untrackArmor, updateArmorLevel])
+    return { addFavorite, armorState, removeFavorite, setArmorLevel, trackArmor, untrackArmor }
+  }, [addFavorite, armorState, removeFavorite, setArmorLevel, trackArmor, untrackArmor])
 
   return (
     <ArmorContext.Provider value={providerValues}>

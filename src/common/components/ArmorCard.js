@@ -7,55 +7,67 @@ import { useCallback } from 'react'
 import { Card, Heading, Row, IconButton, useArmorState } from '.'
 import { useDeviceWidth } from '../hooks'
 
-function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
-  const [armorState,,, updateArmorLevel] = useArmorState()
+const mainRowCss = css`
+  display: flex;
+  width: 100%;
+
+  &[narrow] {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+`
+
+const headingCss = css`
+  margin: 0.5rem 0 0.75rem 0;
+
+  &[narrow] {
+    text-align: center;
+  }
+`
+
+const buttonRowCss = css`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 100%;
+
+  .button-group {
+    display: flex;
+    gap: 0.5rem;
+
+    &[narrow] > * {
+      flex: 1 1 50%;
+    }
+  }
+
+  &[narrow] {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+`
+
+function ArmorCard({ data, headingLevel = 3, isTracked, isFavorited }) {
+  const { addFavorite, armorState, removeFavorite, setArmorLevel, trackArmor, untrackArmor } = useArmorState()
   const { atWidth } = useDeviceWidth()
-  const { inInventory } = armorState
+  const { level, favorited } = armorState.inInventory[data._id] || {}
 
-  const mainRowCss = css`
-    display: flex;
-    width: 100%;
-
-    &[narrow] {
-      align-items: center;
-      flex-direction: column-reverse;
+  const handleFavoriteClick = useCallback(() => {
+    if (isFavorited) {
+      removeFavorite(data._id)
+    } else {
+      addFavorite(data._id)
     }
-  `
+  }, [addFavorite, data._id, isFavorited, removeFavorite])
 
-  const headingCss = css`
-    margin: 0.5rem 0 0.75rem 0;
-
-    &[narrow] {
-      text-align: center;
+  const handleInventoryClick = useCallback(() => {
+    if (isTracked) {
+      untrackArmor(data._id)
+    } else {
+      trackArmor(data._id)
     }
-  `
+  }, [data._id, isTracked, trackArmor, untrackArmor])
 
-  const buttonRowCss = css`
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    width: 100%;
-
-    .button-group {
-      display: flex;
-      gap: 0.5rem;
-
-      &[narrow] > * {
-        flex: 1 1 50%;
-      }
-    }
-
-    &[narrow] {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  `
-
-  const handleClick = useCallback(() => {
-    setTracking(!isTracked)
-  }, [setTracking, isTracked])
-
-  const toggleInventoryPresence = <button onClick={handleClick}>{isTracked ? 'Remove' : 'Add'}</button>
+  const toggleInventoryPresence = <button onClick={handleInventoryClick}>{isTracked ? 'Remove' : 'Add'}</button>
   const narrowValue = atWidth({ default: null, md: '', lg: null }) // '' creates a valueless attribute in the DOM
 
   const nameLevelCss = css`
@@ -66,6 +78,7 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
 
     &[narrow] {
       flex-direction: ${isTracked ? 'column-reverse' : 'column'};
+      margin-inline-end: 0;
     }
   `
 
@@ -73,7 +86,7 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
     <Card>
       <div css={mainRowCss} narrow={narrowValue}>
         <div css={nameLevelCss} narrow={narrowValue}>
-          {isTracked && <ArmorLevel level={inInventory[data._id] || 0} updateLevel={(newLevel) => updateArmorLevel(data._id, newLevel)} />}
+          {isTracked && <ArmorLevel level={level || 0} updateLevel={(newLevel) => setArmorLevel(data._id, newLevel)} />}
           <Heading css={headingCss} level={headingLevel} narrow={narrowValue}>{data?.displayName}</Heading>
           {!isTracked && toggleInventoryPresence}
         </div>
@@ -81,9 +94,11 @@ function ArmorCard({ data, headingLevel=3, isTracked, setTracking }) {
       </div>
       {isTracked && (
         <div css={buttonRowCss} narrow={narrowValue}>
-            <button disabled>Upgrade</button>
+          <button disabled>Upgrade</button>
           <div className='button-group' narrow={narrowValue}>
-            <button disabled>Favorite</button>
+            <button onClick={handleFavoriteClick}>
+              {favorited ? 'Unfavorite' : 'Favorite'}
+            </button>
             {toggleInventoryPresence}
           </div>
         </div>
@@ -103,7 +118,7 @@ function ArmorLevel({ level, updateLevel }) {
     )) : null
 
   return (
-    <Row>
+    <Row justify='space-between'>
       {level !== undefined && level > 0 && <IconButton icon={faCircleXmark} color='#f00' onClick={() => updateLevel(0)} />}
       {solidStars}
       {outlineStars}

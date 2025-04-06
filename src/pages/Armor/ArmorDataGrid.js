@@ -1,23 +1,15 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { useArmorState, ArmorGroup } from '../../common/components'
 
 function ArmorDataGrid() {
-  const [armorState, trackArmor, untrackArmor] = useArmorState()
-  const { data, loading, error, inInventory } = armorState
-
-  const setTracking = useCallback((armorId, inInventory) => {
-    if (inInventory) {
-      trackArmor(armorId)
-    } else {
-      untrackArmor(armorId)
-    }
-  }, [trackArmor, untrackArmor])
+  const { armorState, } = useArmorState()
+  const { data, loading, error, inInventory: allInInventory } = armorState
 
   if (loading || !data) return <p>Loading...</p>
   if (error) return <p>Error: {error.message}</p>
 
   const obtaineedArmorBySet = data
-    .filter((item) => inInventory[item._id] !== undefined)
+    .filter((item) => allInInventory[item._id] !== undefined)
     .reduce((acc, item) => {
       if (!acc[item.setId]) {
         acc[item.setId] = []
@@ -27,7 +19,7 @@ function ArmorDataGrid() {
     }, {})
 
   const unobtainedArmorBySet = data
-    .filter((item) => inInventory[item._id] === undefined)
+    .filter((item) => allInInventory[item._id] === undefined)
     .reduce((acc, item) => {
       if (!acc[item.setId]) {
         acc[item.setId] = []
@@ -38,7 +30,7 @@ function ArmorDataGrid() {
 
   return (
     <>
-      {Object.keys(inInventory).length > 0 && (
+      {Object.keys(allInInventory).length > 0 && (
         <>
           <h2>In Inventory</h2>
           {Object.entries(obtaineedArmorBySet)
@@ -48,7 +40,6 @@ function ArmorDataGrid() {
                 <ArmorGroup
                   armorData={{ setId, items }}
                   key={setId}
-                  setTracking={setTracking}
                 />
               )
             })
@@ -67,7 +58,6 @@ function ArmorDataGrid() {
                 <ArmorGroup
                   armorData={{ setId, items }}
                   key={setId}
-                  setTracking={setTracking}
                 />
               )
             })
