@@ -4,7 +4,7 @@ import { useDeviceWidth } from '../../common/hooks'
 
 function ItemDataGrid() {
   const { atWidth } = useDeviceWidth()
-  const [itemState,, setQty] = useItemState()
+  const { itemState, setQty } = useItemState()
   const {
     data,
     loading,

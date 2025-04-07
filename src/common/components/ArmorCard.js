@@ -4,7 +4,7 @@ import { faStar as solidStar, faCircleXmark } from '@fortawesome/free-solid-svg-
 import { faStar as outlineStar } from '@fortawesome/free-regular-svg-icons'
 import PropTypes from 'prop-types'
 import { useCallback } from 'react'
-import { Card, Heading, Row, IconButton, useArmorState } from '.'
+import { Card, Heading, Row, IconButton, useArmorState, useItemState } from '.'
 import { useDeviceWidth } from '../hooks'
 
 const mainRowCss = css`
@@ -48,8 +48,10 @@ const buttonRowCss = css`
 
 function ArmorCard({ data, headingLevel = 3, isTracked, isFavorited }) {
   const { addFavorite, armorState, removeFavorite, setArmorLevel, trackArmor, untrackArmor } = useArmorState()
+  const { itemState, hasItems, itemDispatch } = useItemState()
   const { atWidth } = useDeviceWidth()
   const { level, favorited } = armorState.inInventory[data._id] || {}
+  const { data: itemData } = itemState
 
   const handleFavoriteClick = useCallback(() => {
     if (isFavorited) {
@@ -82,6 +84,25 @@ function ArmorCard({ data, headingLevel = 3, isTracked, isFavorited }) {
     }
   `
 
+  const [hasNextUpgrade, materialsObject] = itemData?.length > 0 ? hasItems(data?.upgrades[level]) : [false, {}]
+  const upgradeProps = {
+    disabled: hasNextUpgrade ? false : true
+  }
+
+  const performUpgrade = useCallback(() => {
+    if (hasNextUpgrade) {
+      const newPossessedItems = { ...itemState.possessedItems }
+      Object.entries(materialsObject).forEach(([id, qty]) => {
+        if (newPossessedItems[id]) {
+          newPossessedItems[id] -= qty
+        }
+      })
+      itemDispatch({ possessedItems: newPossessedItems })
+      localStorage.setItem('trackedItemIds', JSON.stringify(newPossessedItems))
+      setArmorLevel(data._id, level + 1)
+    }
+  }, [data._id, hasNextUpgrade, itemDispatch, itemState.possessedItems, level, materialsObject, setArmorLevel])
+
   return (
     <Card>
       <div css={mainRowCss} narrow={narrowValue}>
@@ -94,7 +115,7 @@ function ArmorCard({ data, headingLevel = 3, isTracked, isFavorited }) {
       </div>
       {isTracked && (
         <div css={buttonRowCss} narrow={narrowValue}>
-          <button disabled>Upgrade</button>
+          <button {...upgradeProps} onClick={performUpgrade}>Upgrade</button>
           <div className='button-group' narrow={narrowValue}>
             <button onClick={handleFavoriteClick}>
               {favorited ? 'Unfavorite' : 'Favorite'}

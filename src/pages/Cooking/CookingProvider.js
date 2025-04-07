@@ -13,7 +13,7 @@ function cookingReducer(state, action) {
 const CookingContext = createContext()
 
 export function CookingProvider({ children }) {
-  const [itemState, itemDispatch] = useItemState()
+  const { itemState, itemDispatch } = useItemState()
   const { possessedItems } = itemState
   const [cookingState, cookingDispatch] = useReducer(cookingReducer, initialState)
 

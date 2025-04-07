@@ -41,9 +41,32 @@ export function ItemProvider({ children }) {
    }
  }, [itemState])
 
+  const hasItems = useCallback((upgradeData) => {
+    const { data, possessedItems } = itemState
+    // Get ids since the api gives slugs instead of ids.
+    // add them as properties to the materialsObject with their qty as value.
+    const materialsObject = {}
+    if (upgradeData?.materials) {
+      upgradeData.materials.forEach((material) => {
+        const item = data.find((item) => item.slug === material.id)
+        if (item) {
+          materialsObject[item._id] = material.quantity
+        }
+      })
+    }
+    // check if possessedItems has all the items in materialsObject
+    // in a quantity greater than or equal to the quantity in materialsObject.
+    const hasAllItems = Object.entries(materialsObject)
+      .every(([itemId, qty]) => {
+        const possessedQty = possessedItems[itemId] || 0
+        return possessedQty >= qty
+      })
+    return [hasAllItems, materialsObject]
+  }, [itemState])
+
   const providerValues = useMemo(() => {
-    return [itemState, itemDispatch, setQty]
-  }, [itemState, setQty])
+    return { hasItems, itemState, itemDispatch, setQty }
+  }, [hasItems, itemState, setQty])
 
   useEffect(() => {
     axios.get(`${getApiBase()}/items`)
