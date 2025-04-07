@@ -1,12 +1,12 @@
 import React from 'react'
-import { LayoutBand } from '../../common/components'
-import ItemDataGrid from './ItemDataGrid'
+import { ItemDataGrid, LayoutBand, useItemState } from '../../common/components'
 
 function Items() {
+  const { itemState, setQty } = useItemState()
   return (
     <LayoutBand>
       <h1>Items</h1>
-      <ItemDataGrid />
+      <ItemDataGrid itemState={itemState} setQty={setQty} />
     </LayoutBand>
   )
 }

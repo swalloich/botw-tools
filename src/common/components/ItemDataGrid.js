@@ -1,10 +1,9 @@
 import React from 'react'
-import { ItemCard, Grid, useItemState } from '../../common/components'
-import { useDeviceWidth } from '../../common/hooks'
+import { ItemCard, Grid } from '.'
+import { useDeviceWidth } from '../hooks'
 
-function ItemDataGrid() {
+function ItemDataGrid({ itemState, setQty }) {
   const { atWidth } = useDeviceWidth()
-  const { itemState, setQty } = useItemState()
   const {
     data,
     loading,
