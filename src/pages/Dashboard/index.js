@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 import LayoutBand from '../../common/components/LayoutBand'
 import { ArmorGroup, useArmorState } from '../../common/components'
 
@@ -27,9 +28,10 @@ export default function Dashboard() {
   return (
     <LayoutBand>
       <h1>Dashboard</h1>
-      {hasFavoritedArmor && (
+      <p>Welcome to your dashboard! Here you can manage your armor collection, perform upgrades, and easily see what items you need!</p>
+      <h2>Favorited Armor</h2>
+      {hasFavoritedArmor ? (
         <>
-          <h2>Favorited Armor</h2>
           {favoritedArmorBySet && Object.entries(favoritedArmorBySet)
             .sort(([armorIdA], [armorIdB]) => armorIdA.localeCompare(armorIdB))
             .map(([setId, items]) => {
@@ -43,6 +45,8 @@ export default function Dashboard() {
             })
           }
         </>
+      ) : (
+        <p>No favorited armor found. You can add favorites on the {<NavLink to="/armor">armor page</NavLink>}</p>
       )}
     </LayoutBand>
   )
