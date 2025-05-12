@@ -1,6 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 /** @jsxImportSource @emotion/react */
+import PropTypes from 'prop-types'
 import { css } from '@emotion/react'
 
 export default function LayoutBand({children, direction = 'column', ...props}) {

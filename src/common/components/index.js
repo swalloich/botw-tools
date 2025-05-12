@@ -1,3 +1,9 @@
+/********************************************************************
+ * APPLICATION COMMON COMPONENTS
+ *
+ * Do not import common commponents using this index.js file in other
+ * common components. Doing this will create circular dependencies.
+ *******************************************************************/
 export { ArmorProvider, useArmorState } from './ArmorProvider'
 export { default as ArmorCard } from './ArmorCard'
 export { default as ArmorGroup } from './ArmorGroup'
