@@ -9,6 +9,7 @@ export default function LayoutBand({children, direction = 'column', ...props}) {
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+    box-sizing: border-box;
 
     @media (min-width: 576px) {
       max-width: 540px;

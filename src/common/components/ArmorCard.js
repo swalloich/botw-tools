@@ -29,7 +29,6 @@ const buttonRowCss = css`
   display: flex;
   justify-content: space-between;
   margin-top: 0.5rem;
-  width: 100%;
 
   .button-group {
     display: flex;
