@@ -29,7 +29,7 @@ const iconListCss = css`
   display: flex;
   list-style: none;
   padding: 0;
-  flex-gap: 1rem;
+  gap: 1rem;
 `
 
 export default function Footer({ baseHeaderLevel=2, ...props }) {

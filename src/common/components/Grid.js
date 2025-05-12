@@ -8,7 +8,6 @@ export default function Grid({ children, columns = 3, gap = 20 }) {
     display: grid;
     grid-template-columns: ${repeat(columns, '1fr')};
     grid-gap: ${gap}px;
-    width: 100%;
   `
 
   return (
