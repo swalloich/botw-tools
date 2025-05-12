@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router'
 import useDeviceWidth from '../../hooks/useDeviceWidth'
 import LayoutBand from '../LayoutBand'
@@ -17,7 +17,22 @@ const hrCss = css`
   width: 100%;
 `
 
-export default function Footer({ baseHeaderLevel=3, ...props }) {
+const githubIconCss = css`
+  color: #000;
+`
+
+const linkedinIconCss = css`
+  color: #0b66c3;
+`
+
+const iconListCss = css`
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-gap: 1rem;
+`
+
+export default function Footer({ baseHeaderLevel=2, ...props }) {
   const { atWidth } = useDeviceWidth()
 
   return (
@@ -26,14 +41,46 @@ export default function Footer({ baseHeaderLevel=3, ...props }) {
         <Grid columns={atWidth({ default: 1, md: 2 })}>
           <div>
             <Heading level={baseHeaderLevel}>Project Links</Heading>
-            <div>
-              <Link to="https://github.com/swalloich/botw-tools" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size='2x' />
-              </Link>
-            </div>
+            <ul css={iconListCss}>
+              <li>
+                <Link
+                  aria-label="Front-end repository for this page"
+                  css={githubIconCss}
+                  to="https://github.com/swalloich/botw-tools"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} size='2x' />
+                </Link>
+              </li>
+            </ul>
           </div>
           <div>
             <Heading level={baseHeaderLevel}>My Links</Heading>
+            <ul css={iconListCss}>
+              <li>
+                <Link
+                  aria-label="My GitHub profile"
+                  css={githubIconCss}
+                  to="https://github.com/swalloich"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} size='2x' />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  aria-label="My LinkedIn profile"
+                  css={linkedinIconCss}
+                  to="https://www.linkedin.com/in/nelsjac42/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} size='2x' />
+                </Link>
+              </li>
+            </ul>
           </div>
         </Grid>
         <hr css={hrCss} />
