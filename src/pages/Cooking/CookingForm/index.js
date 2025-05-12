@@ -19,7 +19,7 @@ const fieldsetCss = css`
 `
 
 export default function CookingForm() {
-  const [itemState] = useItemState()
+  const  { itemState } = useItemState()
   const { loading, possessedItems } = itemState
   const [,, getRecipes] = useCookingState()
 

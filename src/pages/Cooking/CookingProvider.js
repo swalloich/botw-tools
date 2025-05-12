@@ -13,7 +13,7 @@ function cookingReducer(state, action) {
 const CookingContext = createContext()
 
 export function CookingProvider({ children }) {
-  const [itemState, itemDispatch] = useItemState()
+  const { itemState, itemDispatch } = useItemState()
   const { possessedItems } = itemState
   const [cookingState, cookingDispatch] = useReducer(cookingReducer, initialState)
 
@@ -30,8 +30,7 @@ export function CookingProvider({ children }) {
       .catch(error => {
         console.error(error)
       })
-    console.log('getRecipes', cookingState)
-  }, [cookingDispatch, possessedItems, cookingState])
+  }, [cookingDispatch, possessedItems])
 
   // subtract the ingredients from the recipe from the possessedItems.
   const markCooked = useCallback(() => {

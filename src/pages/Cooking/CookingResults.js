@@ -6,7 +6,7 @@ import { ItemCard, useItemState } from '../../common/components'
 export default function CookingResults() {
   const [cookingState,,, markCooked] = useCookingState()
   const { recipe } = cookingState
-  const [itemState] = useItemState()
+  const { itemState } = useItemState()
   const { data } = itemState
 
   const recipeItemTotal = Object.values(recipe || {}).reduce((acc, qty) => acc + qty, 0)
