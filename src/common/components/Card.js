@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types'
-import React from 'react'
 import { css } from '@emotion/react'
 
 function Card({ children, hAlign = 'start', padding = 'medium', ...props }) {
@@ -29,7 +28,7 @@ function Card({ children, hAlign = 'start', padding = 'medium', ...props }) {
     background-color: white;
     border-radius: 8px;
     padding: ${paddingValue};
-    box-shadow: 0 0 10px rgba(5, 5, 5, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.95);
   `
 
   return (
