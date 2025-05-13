@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 import { Outlet } from 'react-router'
+import { NavMenuProvider } from '../NavBar/NavMenuProvider'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -17,11 +18,13 @@ const mainCss = css`
 function PageWrapper({links}) {
   return (
     <div css={wrapperCSS}>
-      <Header links={links} />
-      <main css={mainCss}>
-        <Outlet />
-      </main>
-      <Footer />
+      <NavMenuProvider>
+        <Header links={links} />
+        <main css={mainCss}>
+          <Outlet />
+        </main>
+        <Footer />
+      </NavMenuProvider>
     </div>
   )
 }
