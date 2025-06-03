@@ -36,10 +36,10 @@ const listCss = css`
       margin-left: calc(var(--nav-width) * -1);
     }
 
-    background-color: #fff;
+    background-color: var(--background-color);
     flex-direction: column;
     height: 100vh;
-    left: 100vw;
+    left: calc(100vw + var(--nav-buffer));
     position: absolute;
     transition: margin-left 0.15s ease-in-out;
     top: 100%;

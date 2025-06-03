@@ -5,8 +5,10 @@ import { css } from '@emotion/react'
 
 const buttonCss = css`
   align-items: center;
-  border: 4px solid #000;
+  background-color: var(--background-color);
+  border: 4px solid var(--text-color);
   border-radius: 4px;
+  color: var(--text-color);
   display: flex;
   height: 40px;
   justify-content: center;
