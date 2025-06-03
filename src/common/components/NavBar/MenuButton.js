@@ -5,12 +5,12 @@ import { css } from '@emotion/react'
 
 const buttonCss = css`
   align-items: center;
-  border: 5px solid #000;
-  border-radius: 5px;
+  border: 4px solid #000;
+  border-radius: 4px;
   display: flex;
-  height: 50px;
+  height: 40px;
   justify-content: center;
-  width: 50px;
+  width: 40px;
 `
 
 export default function MenuButton({ isOpen, onClick }) {
