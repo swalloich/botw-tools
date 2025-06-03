@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 class Breakpoint {
   constructor(value, name) {
@@ -95,7 +95,7 @@ function useViewportWidth() {
 export default function useDeviceWidth() {
   const currentWidth = useViewportWidth()
 
-  const atWidth = (values) => {
+  const atWidth = useCallback((values) => {
     if (currentWidth) {
       const breakpoints = Object.keys(values).filter(key => key !== 'default')
       let selectedBreakpoint = 'default'
@@ -111,7 +111,7 @@ export default function useDeviceWidth() {
     } else {
       return values.default
     }
-  }
+  }, [currentWidth])
 
   return { atWidth, currentWidth }
 }

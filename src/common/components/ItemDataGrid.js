@@ -12,7 +12,7 @@ function ItemDataGrid({ itemState, setQty }) {
   } = itemState
 
   return (
-    <Grid columns={atWidth({ default: 2, sm: 4, md: 5, lg: 6, xxl: 7 })}>
+    <Grid columns={atWidth({ default: 2, sm: 3, md: 4, lg: 6, xxl: 7 })}>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {!loading && !error && data.map((item) => {

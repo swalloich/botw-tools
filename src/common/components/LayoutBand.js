@@ -2,13 +2,14 @@
 import PropTypes from 'prop-types'
 import { css } from '@emotion/react'
 
-export default function LayoutBand({children, direction = 'column', ...props}) {
+export default function LayoutBand({children, css: additionalCss, direction = 'column', ...props}) {
   const wrapperCSS = css`
     display: flex;
     flex-direction: ${direction};
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+    box-sizing: border-box;
 
     @media (min-width: 576px) {
       max-width: 540px;
@@ -32,7 +33,7 @@ export default function LayoutBand({children, direction = 'column', ...props}) {
   `
 
   return (
-    <div css={wrapperCSS}>
+    <div css={[wrapperCSS, additionalCss]} {...props}>
       {children}
     </div>
   )
