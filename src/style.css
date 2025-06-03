@@ -1,6 +1,11 @@
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 body, html {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
