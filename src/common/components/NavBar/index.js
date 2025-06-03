@@ -59,7 +59,7 @@ function NavBar({ links }) {
       {menuState.isMobile && (
         <MenuButton isOpen={menuState.isOpen} onClick={handleMenuClick} />
       )}
-      <ul css={listCss} data-menu-open={menuState.isOpen ? '' : undefined} aria-hidden={!menuState.isOpen}>
+      <ul css={listCss} data-menu-open={menuState.isOpen ? '' : undefined}>
         {links.map((link) => (
           <li key={link.to}>
             <Link
