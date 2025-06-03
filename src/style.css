@@ -4,8 +4,19 @@ body, html {
 }
 
 body {
-  margin: 0;
+  --background-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.95);
+  --text-color: #000;
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, sans-serif;
+  margin: 0;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #121212;
+    --shadow-color: rgba(230, 230, 230, 0.85);
+    --text-color: #fff;
+  }
 }
 
 button {

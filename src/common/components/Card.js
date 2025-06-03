@@ -25,10 +25,10 @@ function Card({ children, hAlign = 'start', padding = 'medium', ...props }) {
     display: flex;
     flex-direction: column;
     align-items: ${hAlign};
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 8px;
     padding: ${paddingValue};
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.95);
+    box-shadow: 0 0 5px var(--shadow-color);
   `
 
   return (

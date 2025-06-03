@@ -11,6 +11,7 @@ const navCss = css`
 
   @media (max-width: 576px) {
     --nav-width: 300px;
+    --nav-buffer: 15px;
   }
 `
 
@@ -33,13 +34,13 @@ const listCss = css`
 
   @media (max-width: 576px) {
     &[data-menu-open] {
-      margin-left: calc(var(--nav-width) * -1);
+      margin-left: calc((var(--nav-width) + var(--nav-buffer)) * -1);
     }
 
-    background-color: #fff;
+    background-color: var(--background-color);
     flex-direction: column;
     height: 100vh;
-    left: 100vw;
+    left: calc(100vw + var(--nav-buffer));
     position: absolute;
     transition: margin-left 0.15s ease-in-out;
     top: 100%;

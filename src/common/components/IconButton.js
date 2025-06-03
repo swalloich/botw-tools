@@ -6,7 +6,7 @@ function IconButton({ color, icon, iconSize, onClick, ...props }) {
   const iconButtonCss = css`
     border: none;
     background: none;
-    ${color ? `color: ${color};` : ''}
+    color: ${color || 'var(--text-color)'};
     cursor: pointer;
     padding: 7.5px;
     margin: 0;

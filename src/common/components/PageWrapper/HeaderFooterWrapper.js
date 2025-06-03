@@ -4,8 +4,8 @@ import { css } from '@emotion/react'
 export const headerFooterCss = css`
   display: flex;
   padding: 8px 24px;
-  background-color: white;
-  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.95));
+  background-color: var(--background-color);
+  filter: drop-shadow(0 0 7px var(--shadow-color));
 `
 
 export default function HeaderFooterWrapper({ Element, children, css: passedCss, ...props }) {
