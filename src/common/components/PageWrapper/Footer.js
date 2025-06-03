@@ -11,6 +11,7 @@ import HeaderFooterWrapper from './HeaderFooterWrapper'
 
 const footerCss = css`
   margin-top: 40px;
+  z-index: -1;
 `
 
 const hrCss = css`

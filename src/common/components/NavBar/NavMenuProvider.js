@@ -24,11 +24,11 @@ const reducer = (state, action) => {
 export function NavMenuProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState)
   const { atWidth } = useDeviceWidth()
+  const isMobile = atWidth({ default: true, sm: false })
 
   useEffect(() => {
-    const isMobile = atWidth({ default: true, sm: false })
     dispatch({ type: "SET_MOBILE", payload: isMobile })
-  }, [ atWidth ])
+  }, [isMobile])
 
   return (
     <NavMenuContext.Provider value={{ state, dispatch }}>

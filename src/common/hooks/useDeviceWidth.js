@@ -56,20 +56,12 @@ const widthBreakpoints = {
   xxl: new Breakpoint(1400, 'xxl')
 }
 
-function debounce(func, wait) {
-  let timeout
-  return (...args) => {
-    clearTimeout(timeout)
-    timeout = setTimeout(() => func(...args), wait)
-  }
-}
-
 function useViewportWidth() {
   const [width, setWidth] = useState(window.innerWidth)
-  const [breakpoint, setBreakpoint] = useState(widthBreakpoints.xs)
+  const [breakpoint, setBreakpoint] = useState()
 
   useEffect(() => {
-    const handleResize = debounce(() => setWidth(window.innerWidth), 50)
+    const handleResize = () => setWidth(window.innerWidth)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
